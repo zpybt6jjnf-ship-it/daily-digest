@@ -142,6 +142,9 @@ Search for recent publications/statements from these organizations:
 - Institute for Progress
 - Environmental Policy Innovation Center
 - RAND Corporation
+- Nuclear Innovation Alliance 
+- Grid Strategies
+- Abundance Institute 
 
 Also search for similar organizations and note as "Similar Organizations"
 - Only include items from past 7 days

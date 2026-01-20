@@ -22,34 +22,92 @@ SEARCH THESE SOURCES:
 - RTOs: PJM, MISO, CAISO, ERCOT, SPP, NYISO, ISO-NE
 
 EVENTS TO CHECK:
-- FERC Open Meeting, Congressional hearings (Senate ENR, House E&C), RTO board meetings
+- FERC Open Meeting agenda/outcomes
+- Congressional hearings (Senate ENR, House E&C)
+- RTO board meetings
+- Major comment deadlines
 
-SOURCE ACCURACY RULES:
-1. Use ORIGINAL publication dates, not news coverage dates
-2. Title = what happened, not what article is about
-3. Distinguish primary sources from secondary coverage
-4. For reactions: "Re: [Original] (Date)"
-5. Flag uncertain facts: "(unverified)" or "(paywalled)"
+For each section, actively search for news from these sources rather than relying on general searches.
+
+SOURCE ACCURACY RULES (CRITICAL):
+
+1. PRIMARY vs. SECONDARY SOURCES
+   - Primary: Original reports, official announcements, filings, press releases
+   - Secondary: News articles, commentary, analysis about primary sources
+   - ALWAYS distinguish between them. Never present secondary coverage as the primary source.
+
+2. DATING
+   - Use the ORIGINAL publication date for reports/documents, not news coverage date
+   - Example: If a Jan 15 article discusses a December report, use the December date
+   - Format: "Report Name (December 2025)" not "Report Name · Jan 15, 2026"
+
+3. ACCURATE TITLES
+   - Title should reflect WHAT HAPPENED, not what the article is about
+   - WRONG: "NPC Permitting Report" (when source is an article about company supporting the report)
+   - RIGHT: "Williams Endorses NPC Permitting Report"
+
+4. REACTIONS/COMMENTARY
+   - Lead with WHO is reacting and WHAT they said
+   - Reference the original source with its actual date
+   - Example: "Williams CEO endorses NPC's December 2025 permitting report, calling for streamlined NEPA reviews"
+
+5. VERIFICATION
+   - If uncertain about a date or fact: "(date unconfirmed)" or "(per [source])"
+   - When source is paywalled: "(paywalled - summary based on available excerpt)"
+
+6. LINK TO BEST SOURCE
+   - Prefer linking to primary sources when available
+   - If only secondary coverage exists, note that it's coverage of [original]
 
 SECTIONS TO GENERATE:
+
 1. Top Developments (3 bullet points summarizing biggest news)
+
 2. News & Statements (past 24-48 hrs)
+   Search: energy policy news, permitting reform, FERC orders, transmission projects, utility announcements, renewable energy, grid reliability, DOE announcements, offshore wind
+   - Focus on NEW announcements, not coverage of older items
+   - If covering reactions to older news, frame as reactions
+
 3. Publications (past 7 days only)
+   Search: EIA, RMI, RFF, OECD, NREL, think tank reports, academic energy publications
+   - Use actual publication date, not discovery date
+
 4. Congressional & Executive Activity
+   Search: energy bills Congress, FERC notices, Federal Register energy/environment, DOE announcements, EPA rules, BLM leasing
+   - Include docket numbers and filing dates where available
+
 5. Business Activity (include MW, $, timelines)
+   Search: energy project announcements, renewable PPAs, utility M&A, transmission projects, data center power deals, nuclear agreements
+   - Distinguish between: announced, filed, approved, completed
+
 6. China
+   Search: China energy policy, State Grid, NDRC energy, China renewables, China carbon market, Five-Year Plan energy
+
 7. Macro Trends (2-3 paragraphs)
+   - Connect today's items to ongoing themes (permitting stalemate, data center load growth, nuclear momentum, etc.)
+   - Cite specific items from this digest
+   - Avoid speculation; stick to observable patterns
+
 8. What to Watch This Week (table + Key Questions)
+   - Table of upcoming deadlines, hearings, FERC meetings, court rulings, conferences
+   - Verify dates against official calendars where possible
+
 9. Grantee Activities (see detailed instructions below)
+
 10. Limitations & Gaps
+    - List sources not systematically covered
+    - Note items where dates could not be verified
+    - Note paywalled sources that limited coverage
 
 GRANTEE ACTIVITIES — DETAILED INSTRUCTIONS:
 Search for recent publications/statements (past 7 days) from these organizations:
 - ClearPath, Clean Air Task Force, Bipartisan Policy Center, Clean Energy Buyers Alliance
 - R Street Institute, Breakthrough Institute, Third Way, Foundation for American Innovation
-- Rainey Center, Siting Solutions Project, Electricity Customers Alliance
+- Rainey Center, Siting Solutions Project / Clean Tomorrow, Electricity Customers Alliance
 - American Conservation Coalition, Niskanen Center, Institute for Progress
-- Environmental Policy Innovation Center, RAND Corporation
+- Environmental Policy Innovation Center, RAND Corporation, Nuclear Innovation Alliance, Grid Strategies, Abundance Institute
+
+Also search for similar organizations and note findings under "Similar Organizations"
 
 Format:
 - If publication found: Create a card with org name, publication summary (not just a quote), and "Source →" link
@@ -219,8 +277,29 @@ HTML TEMPLATE TO USE:
 </body>
 </html>
 
+QUALITY CHECKLIST (verify before finalizing):
+□ Each item's date reflects the actual event/publication date, not coverage date
+□ Titles describe what happened, not what an article is about
+□ Primary sources linked where available
+□ Reactions clearly labeled as reactions, with original source referenced
+□ No items older than 7 days unless noting ongoing significance
+□ Uncertain facts flagged appropriately
+□ All links use "Source →" format
+□ Logo SVG included in header
+□ All sections use coral-highlighted header style
+
+SELF-REVIEW BEFORE OUTPUT:
+1. FACT CHECK: Review each item for date accuracy and proper source attribution
+2. DESIGN CHECK: Verify HTML matches the template exactly (colors, spacing, fonts)
+3. LINK CHECK: Ensure all URLs are complete and properly formatted
+
 OUTPUT:
 Generate a complete, valid HTML file using the template above. Fill in all sections with real, current news. Output only the HTML code, no explanation.
+
+STYLE:
+- Clean, professional, data-forward
+- No emoji
+- Accuracy over comprehensiveness
 
 CRITICAL REMINDERS:
 - All links must say "Source →" (exactly this text)
@@ -228,3 +307,5 @@ CRITICAL REMINDERS:
 - Each grantee card needs a substantive summary (not just a quote)
 - Include the SVG logo exactly as shown
 - Use the exact inline styles from the template
+
+Output as an artifact so I can preview the rendered HTML.
