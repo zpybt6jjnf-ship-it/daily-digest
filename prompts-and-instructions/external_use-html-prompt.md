@@ -11,21 +11,171 @@ SCOPE
 - Energy: All sectors, weighted toward electricity/grid
 - Permitting: NEPA, environmental review, siting, interconnection, permitting reform
 
-SEARCH THESE SOURCES:
-- News: Utility Dive, E&E News, RTO Insider, Canary Media, Heatmap News, Reuters Energy, Bloomberg Energy
-- Government: FERC.gov, DOE.gov, Federal Register
-- Companies: NextEra, Duke, Southern, Dominion, AEP, Xcel, Entergy, PG&E, Vistra, Constellation, Talen, AES
-- Transmission: ITC, ATC, GridLiance, LS Power
-- Renewables: Invenergy, Apex, Ørsted, Avangrid, EDF, Pattern
-- Nuclear: NuScale, TerraPower, X-energy, Kairos, Oklo, Holtec
-- Tech/Data Centers: Meta, Google, Microsoft, Amazon, Oracle
-- RTOs: PJM, MISO, CAISO, ERCOT, SPP, NYISO, ISO-NE
+---
+COMPLETE SOURCE REFERENCE
+---
 
-EVENTS TO CHECK:
-- FERC Open Meeting agenda/outcomes
-- Congressional hearings (Senate ENR, House E&C)
-- RTO board meetings
-- Major comment deadlines
+PRIORITY NEWS SOURCES:
+
+Trade Publications:
+- Utility Dive (utility industry, regulation) - utilitydive.com
+- E&E News Energywire (energy policy, Congress) - eenews.net
+- E&E News Greenwire (environmental policy) - eenews.net
+- RTO Insider (wholesale markets, RTOs) - rtoinsider.com
+- S&P Global Platts (commodities, markets) - spglobal.com/platts
+- Canary Media (clean energy) - canarymedia.com
+- Heatmap News (climate, energy policy) - heatmap.news
+- Power Magazine (generation, grid tech) - powermag.com
+- Solar Power World - solarpowerworldonline.com
+- Renewable Energy World - renewableenergyworld.com
+- Nuclear Newswire - ans.org/news
+- Natural Gas Intelligence - naturalgasintel.com
+- Transmission Hub - transmissionhub.com
+
+Wire Services:
+- Reuters Energy, Bloomberg Energy, Wall Street Journal, Politico Pro Energy, The Hill Energy
+
+Government Sources:
+- FERC.gov (orders, notices, meeting agendas)
+- DOE.gov (announcements, funding, reports)
+- EIA.gov (data releases, analyses)
+- EPA.gov (rules, permits, enforcement)
+- BLM.gov (leasing, ROW permits)
+- CEQ.gov (NEPA guidance)
+- Federal Register (proposed/final rules)
+- Congress.gov (bills, hearings)
+
+RTO/ISO Sources:
+- PJM (Mid-Atlantic, Midwest) - pjm.com
+- MISO (Midwest, South) - misoenergy.org
+- CAISO (California) - caiso.com
+- ERCOT (Texas) - ercot.com
+- SPP (Central US) - spp.org
+- NYISO (New York) - nyiso.com
+- ISO-NE (New England) - iso-ne.com
+
+---
+COMPANY WATCHLIST
+---
+
+Investor-Owned Utilities (Top 20):
+NextEra Energy (NEE) - Florida, nationwide
+Duke Energy (DUK) - Southeast, Midwest
+Southern Company (SO) - Southeast
+Dominion Energy (D) - Virginia, Carolinas
+American Electric Power (AEP) - Midwest, Texas
+Xcel Energy (XEL) - Midwest, West
+Entergy (ETR) - Gulf South
+WEC Energy (WEC) - Wisconsin
+Evergy (EVRG) - Kansas, Missouri
+Ameren (AEE) - Missouri, Illinois
+CenterPoint (CNP) - Texas, Midwest
+DTE Energy (DTE) - Michigan
+Consumers Energy (CMS) - Michigan
+PPL Corporation (PPL) - Pennsylvania, Kentucky
+Eversource (ES) - New England
+National Grid (NGG) - Northeast
+Pacific Gas & Electric (PCG) - California
+Edison International (EIX) - California
+Pinnacle West/APS (PNW) - Arizona
+NRG Energy (NRG) - Texas, nationwide
+
+Independent Power Producers:
+Vistra (gas, nuclear, renewables), Constellation Energy (nuclear fleet), Talen Energy (nuclear, gas), AES Corporation (renewables, storage), Clearway Energy (renewables)
+
+Transmission Companies:
+ITC Holdings (Midwest), American Transmission Co (Wisconsin, Michigan), GridLiance (Southwest), NextEra Transmission (nationwide), LS Power Grid (competitive), Invenergy Transmission (Midwest), Pattern Energy (transmission, renewables)
+
+Renewable Developers:
+Invenergy, Apex Clean Energy, EDF Renewables, Avangrid Renewables, Ørsted (offshore), Vineyard Wind (offshore), Dominion Offshore Wind, Equinor (offshore), RWE, TotalEnergies, BP, Lightsource BP, Longroad Energy, 174 Power Global, Savion
+
+Nuclear (Advanced & Existing):
+Constellation Energy (existing fleet), Vistra (Comanche Peak), NuScale Power (SMR), TerraPower (advanced reactor), X-energy (HTGR), Kairos Power (molten salt), Oklo (microreactor), Holtec (SMR, decommissioning), GE Hitachi (BWRX-300), Westinghouse (AP1000, AP300), TVA (fleet + SMR plans), Energy Northwest (fleet + SMR), UAMPS (SMR consortium)
+
+Oil & Gas (energy transition relevance):
+ExxonMobil (CCS, hydrogen, lithium), Chevron (CCS, hydrogen, renewables), ConocoPhillips (LNG, Alaska), Williams Companies (gas pipelines, hydrogen), Kinder Morgan (pipelines, CCS), Enterprise Products, Cheniere (LNG), Venture Global (LNG), NextDecade (LNG)
+
+Technology / Data Centers:
+Meta (nuclear PPAs, large load), Google (24/7 carbon-free, nuclear), Microsoft (nuclear, renewables PPAs), Amazon/AWS (nuclear, data center load), Oracle (nuclear, data center deals), Digital Realty, Equinix, QTS Realty
+
+Equipment & Technology:
+GE Vernova (turbines, grid equipment), Siemens Energy (turbines, grid tech), Vestas (wind turbines), First Solar (solar panels), Tesla (storage, solar), Fluence (battery storage), Form Energy (long-duration storage)
+
+---
+EVENTS CALENDAR
+---
+
+Recurring Events:
+- FERC Open Meeting: Monthly (3rd Thursday) - ferc.gov
+- FERC Agenda: Weekly - ferc.gov
+- Senate ENR Committee: As scheduled - energy.senate.gov
+- House E&C Committee: As scheduled - energycommerce.house.gov
+- EIA Weekly Petroleum Status: Wednesday - eia.gov
+- EIA Natural Gas Storage: Thursday - eia.gov
+
+RTO/ISO Meetings:
+- PJM Board of Managers: Monthly
+- PJM Members Committee: Monthly
+- MISO Board of Directors: Monthly
+- CAISO Board of Governors: Monthly
+- ERCOT Board of Directors: Monthly
+- SPP Board of Directors: Quarterly
+
+Major Annual Conferences:
+- CERAWeek (March) - Global energy
+- EEI Financial Conference (November) - Utility industry
+- AWEA Cleanpower (Spring) - Wind industry
+- Solar Power International (Fall) - Solar industry
+- NARUC Annual Meeting (November) - State regulators
+- NASEO Annual Meeting (Fall) - State energy officials
+- GridFWD (Fall) - Grid modernization
+
+Comment Deadlines to Watch:
+Check Federal Register and FERC eLibrary for FERC rulemaking deadlines, EPA rule comment periods, BLM leasing protests, NEPA review comment periods, interconnection reform proceedings
+
+---
+SEARCH QUERY TEMPLATES
+---
+
+News & Statements:
+- "FERC" + "order" + [today/yesterday]
+- "transmission" + "project" + "approved"
+- "renewable" + "PPA" + "announced"
+- "offshore wind" + [company from list]
+- "grid reliability" + [RTO from list]
+- "permitting" + "reform" + "Congress"
+
+Publications:
+- site:eia.gov + "report" + [this week]
+- site:nrel.gov + "publication" + [recent]
+- site:rmi.org + [recent]
+- site:rff.org + [recent]
+- "think tank" + "energy" + "report"
+
+Congressional Activity:
+- site:congress.gov + "energy" + [recent]
+- "Senate" + "energy" + "hearing"
+- "House" + "energy" + "markup"
+- "FERC" + "nomination"
+
+Business Activity:
+- [company from list] + "announces"
+- "PPA" + "signed" + "MW"
+- "acquisition" + "energy" + "utility"
+- "data center" + "power" + "agreement"
+
+---
+COVERAGE GAPS TO NOTE
+---
+
+Always acknowledge in Limitations section if not accessible:
+- Paywalled sources (S&P Global, Bloomberg Terminal)
+- Real-time FERC filings
+- Earnings call transcripts
+- State PUC dockets
+- International sources (IEA, IRENA)
+
+---
 
 For each section, actively search for news from these sources rather than relying on general searches.
 
