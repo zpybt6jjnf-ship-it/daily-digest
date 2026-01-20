@@ -2,62 +2,61 @@
 
 Energy & Permitting Daily Digest project, compiled by Bottlenecks Labs.
 
-**Design System:** See `STYLE_GUIDE.md` for the complete Bottlenecks Labs visual identity.
-**Automation:** See `AUTOMATION.md` for GitHub Actions setup.
-
 ## Quick Start
 
+**From your computer:**
 ```bash
-# Manual: Generate digest with Claude API
-python scripts/generate_digest.py
-
-# Manual: Preview email
-python scripts/send_digest.py --preview
-
-# Manual: Send email
-python scripts/send_digest.py
-
-# Automated: Runs daily via GitHub Actions (see AUTOMATION.md)
+./digest.sh copy   # Copies prompt to clipboard, opens Gemini
+./digest.sh new    # Creates today's HTML file for pasting
+./digest.sh view   # Opens latest digest in browser
 ```
+
+**From anywhere (phone, tablet, etc.):**
+1. Open the prompt from a Google Doc (copy `prompts-and-instructions/external_use-html-prompt.md`)
+2. Paste into Gemini (gemini.google.com)
+3. Copy the HTML output
+4. Save as `.html` file, open in any browser
 
 ## Project Structure
 
-- `prompts-and-instructions/` - Master prompt template for generating digests
-- `digests/` - Output directory for generated digest files
-- `scripts/` - Generation and email scripts
-- `.github/workflows/` - GitHub Actions automation
+```
+prompts-and-instructions/
+  ├── external_use-html-prompt.md  # Full prompt for Gemini (outputs styled HTML)
+  ├── digest-prompt.md             # Prompt for local Claude Code use (outputs markdown)
+  └── sources.md                   # Reference list of news sources and companies
 
-## Automation
+digests/                           # Output directory for generated digests
 
-The digest runs automatically at 6am ET daily via GitHub Actions:
-1. Calls Claude API with web search to gather news
-2. Generates markdown digest
-3. Sends formatted HTML email
-4. Commits digest to repo
+scripts/
+  ├── view_digest.py               # Convert markdown → styled HTML (local use)
+  ├── review_presentation.py       # Check links in digest
+  └── email_template.html          # HTML template reference
+```
 
-Setup: See `AUTOMATION.md`
+## Design System
 
-## Email Setup (Manual)
-
-1. Enable 2-Factor Authentication on your Google account
-2. Generate an App Password: https://myaccount.google.com/apppasswords
-3. Copy `.env.example` to `.env` and fill in credentials
+See `STYLE_GUIDE.md` for the complete Bottlenecks Labs visual identity:
+- Brand colors (ink, cream, teal, coral, gold)
+- Typography (DM Sans, Space Mono)
+- Component patterns (cards, tables, callouts)
 
 ## Digest Sections
 
-1. News & Statements (past 24-48 hrs)
-2. Publications (EIA, RMI, RFF, OECD, NREL, think tanks)
-3. Congressional & Executive Activity
-4. Business Activity
-5. China
-6. Macro Trends
-7. What to Watch This Week
-8. Grantee Activities
-9. Limitations & Gaps
+1. Top Developments (3 key bullet points)
+2. News & Statements (past 24-48 hrs)
+3. Publications (past 7 days)
+4. Congressional & Executive Activity
+5. Business Activity
+6. China
+7. Macro Trends
+8. What to Watch This Week
+9. Grantee Activities
+10. Limitations & Gaps
 
-## Style Guidelines
+## Source Accuracy Rules
 
-- Clean, professional, data-forward
-- No emoji
-- Use tables for structured data
-- Horizontal rules (`---`) between major sections
+- Use ORIGINAL publication dates, not news coverage dates
+- Title = what happened, not what article is about
+- Distinguish primary sources from secondary coverage
+- For reactions: label as "Re: [Original] (Date)"
+- Flag uncertain facts: "(unverified)" or "(paywalled)"

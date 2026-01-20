@@ -279,9 +279,60 @@ a:hover {
 }
 ```
 
-Arrow links use the coral arrow:
+Arrow links use the teal color with arrow:
 ```html
-<a href="#">Read more <span style="color: #e76f51;">→</span></a>
+<a href="#" style="color: #2a9d8f; text-decoration: none; font-size: 12px; font-weight: 500;">Source →</a>
+```
+
+### Beta/Status Banner
+
+For beta or status notifications at the top of content:
+```css
+.banner-beta {
+  background-color: #e9c46a;
+  padding: 8px 28px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+.banner-beta p {
+  font-family: monospace;
+  font-size: 11px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+```
+
+### Callout Box (Key Questions, Notes)
+
+For highlighted information with left accent border:
+```css
+.callout-gold {
+  background: #faf8f5;
+  border-radius: 8px;
+  border-left: 3px solid #e9c46a;
+  padding: 14px 16px;
+}
+
+.callout-teal {
+  background: #faf8f5;
+  border-radius: 8px;
+  border-left: 3px solid #2a9d8f;
+  padding: 14px 16px;
+}
+```
+
+Label inside callout:
+```css
+.callout-label {
+  font-family: monospace;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #e9c46a; /* or #2a9d8f for teal variant */
+  margin: 0 0 10px 0;
+}
 ```
 
 ### Section Headers
@@ -382,13 +433,19 @@ transition: all 0.15s ease;
 
 ## Application Examples
 
-### Email
+### Email / Daily Digest
+- Beta banner: gold background at top
 - Container: white with 2px border, 4px shadow, 12px radius
-- Header: logo + brand name, date on right
-- Gradient bar below header
-- Cards for news items (cream background, no border)
-- Dashed dividers between sections
-- Dark footer with gold top border
+- Header: "Energy & Permitting Daily Digest" title, "BOTTLENECKS LABS" subtitle, date on right
+- Gradient bar (teal → gold) below header
+- Top Developments: cream box with teal left border
+- Section headers: 16px bold with coral highlight gradient
+- News items: cream cards (8px radius, 14px padding)
+- Tables: cream header row, 1px borders
+- Key Questions: cream box with gold left border
+- Dashed dividers (1px dashed `#d4d2cd`) between sections
+- Dark footer (`#1a1a2e`) with gold top border (3px)
+- Font fallbacks for email: `-apple-system, BlinkMacSystemFont, sans-serif` and `monospace`
 
 ### Web Dashboard
 - Cream page background
