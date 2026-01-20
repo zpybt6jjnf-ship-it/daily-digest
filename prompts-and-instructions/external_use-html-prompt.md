@@ -40,11 +40,33 @@ SECTIONS TO GENERATE:
 6. China
 7. Macro Trends (2-3 paragraphs)
 8. What to Watch This Week (table + Key Questions)
-9. Grantee Activities (ClearPath, Clean Air Task Force, Bipartisan Policy Center, Clean Energy Buyers Alliance, R Street Institute, Breakthrough Institute, Third Way, Foundation for American Innovation, Rainey Center, Siting Solutions Project, Electricity Customers Alliance, American Conservation Coalition, Niskanen Center, Institute for Progress, Environmental Policy Innovation Center, RAND Corporation)
+9. Grantee Activities (see detailed instructions below)
 10. Limitations & Gaps
+
+GRANTEE ACTIVITIES — DETAILED INSTRUCTIONS:
+Search for recent publications/statements (past 7 days) from these organizations:
+- ClearPath, Clean Air Task Force, Bipartisan Policy Center, Clean Energy Buyers Alliance
+- R Street Institute, Breakthrough Institute, Third Way, Foundation for American Innovation
+- Rainey Center, Siting Solutions Project, Electricity Customers Alliance
+- American Conservation Coalition, Niskanen Center, Institute for Progress
+- Environmental Policy Innovation Center, RAND Corporation
+
+Format:
+- If publication found: Create a card with org name, publication summary (not just a quote), and "Source →" link
+- If NO publication found for an org: Do NOT create a separate card for it
+- At the END of the section: List all orgs with no recent publications in ONE line:
+  "No recent energy/permitting publications identified: [Org1], [Org2], [Org3]..."
 
 OUTPUT FORMAT:
 Generate a complete HTML file using this exact template. Replace the placeholder comments with actual content.
+
+STRICT FORMATTING RULES:
+1. Every news item MUST end with a link that says exactly "Source →" (not "Read more", not "Link", not the URL)
+2. Link format: <a href="URL" style="color: #2a9d8f; text-decoration: none; font-size: 12px; font-weight: 500;">Source →</a>
+3. Use the exact HTML structure shown in the template — do not simplify or change styles
+4. Every section must use the coral-highlighted header style shown
+5. Grantee section must have individual cards for EACH organization, not a combined list
+6. MUST include the SVG logo in the header exactly as shown in the template
 
 BRAND COLORS:
 - cream: #faf8f5
@@ -83,7 +105,21 @@ HTML TEMPLATE TO USE:
             <td style="padding: 20px 28px; border-bottom: 2px solid #1a1a2e;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td valign="middle">
+                  <td valign="middle" width="52">
+                    <!-- Logo Mark - MUST INCLUDE -->
+                    <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                      <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                          <stop offset="0%" style="stop-color:#2a9d8f" />
+                          <stop offset="50%" style="stop-color:#e9c46a" />
+                          <stop offset="100%" style="stop-color:#e76f51" />
+                        </linearGradient>
+                      </defs>
+                      <rect x="0" y="0" width="44" height="44" fill="#1a1a2e" rx="0" />
+                      <path d="M 0,30.8 L 3.52,28.6 L 7.92,33 L 12.32,22 L 16.72,26.4 L 22,13.2 L 27.28,24.2 L 31.68,19.8 L 36.08,26.4 L 40.48,24.2 L 44,28.6" stroke="url(#logoGradient)" stroke-width="1.32" fill="none" stroke-linejoin="round" />
+                    </svg>
+                  </td>
+                  <td valign="middle" style="padding-left: 12px;">
                     <p style="margin: 0; font-size: 16px; font-weight: 700; color: #1a1a2e;">Energy & Permitting Daily Digest</p>
                     <p style="margin: 2px 0 0 0; font-family: monospace; font-size: 11px; color: #8a8a9a;">BOTTLENECKS LABS</p>
                   </td>
@@ -159,11 +195,14 @@ HTML TEMPLATE TO USE:
             </ol>
           </div>
 
-          <!-- For GRANTEE organizations: -->
+          <!-- For GRANTEE organizations WITH recent publications — one card each: -->
           <div style="background: #faf8f5; border-radius: 8px; padding: 12px 14px; margin-bottom: 10px;">
-            <p style="font-size: 13px; font-weight: 600; color: #1a1a2e; margin: 0 0 6px 0;"><!-- Org Name --></p>
-            <p style="font-size: 12px; line-height: 1.5; color: #4a4a5a; margin: 0;"><!-- Activity or "No recent publications identified" --></p>
+            <p style="font-size: 13px; font-weight: 600; color: #1a1a2e; margin: 0 0 6px 0;">[Org Name]</p>
+            <p style="font-size: 12px; line-height: 1.5; color: #4a4a5a; margin: 0;">[Publication title and 1-2 sentence summary of findings]</p>
+            <p style="margin: 8px 0 0 0;"><a href="URL" style="color: #2a9d8f; text-decoration: none; font-size: 12px; font-weight: 500;">Source →</a></p>
           </div>
+          <!-- At the END, combine all orgs with NO publications into one line: -->
+          <p style="font-size: 12px; font-style: italic; color: #8a8a9a; margin: 16px 0 0 0;">No recent energy/permitting publications identified: [Org1], [Org2], [Org3]...</p>
 
           <!-- Footer -->
           <tr>
@@ -182,3 +221,10 @@ HTML TEMPLATE TO USE:
 
 OUTPUT:
 Generate a complete, valid HTML file using the template above. Fill in all sections with real, current news. Output only the HTML code, no explanation.
+
+CRITICAL REMINDERS:
+- All links must say "Source →" (exactly this text)
+- Grantee cards only for orgs WITH publications; combine those without into one italic line at the end
+- Each grantee card needs a substantive summary (not just a quote)
+- Include the SVG logo exactly as shown
+- Use the exact inline styles from the template
