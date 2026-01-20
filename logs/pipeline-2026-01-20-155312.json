@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-01-20T15:53:12.184069",
+  "digest_file": "digests/energy-digest-2026-01-20.md",
+  "warnings": [
+    "Presentation: 2 broken links found"
+  ],
+  "steps": [
+    {
+      "timestamp": "2026-01-20T15:53:12.184143",
+      "step": "generate",
+      "status": "skipped",
+      "details": {
+        "file": "digests/energy-digest-2026-01-20.md"
+      }
+    },
+    {
+      "timestamp": "2026-01-20T15:53:12.184156",
+      "step": "content_review",
+      "status": "skipped",
+      "details": {}
+    },
+    {
+      "timestamp": "2026-01-20T15:53:12.184159",
+      "step": "presentation_review",
+      "status": "starting",
+      "details": {}
+    },
+    {
+      "timestamp": "2026-01-20T15:53:26.025443",
+      "step": "presentation_review",
+      "status": "completed",
+      "details": {
+        "links_checked": 46,
+        "broken_links": 2,
+        "fixes_applied": 0
+      }
+    },
+    {
+      "timestamp": "2026-01-20T15:53:26.025465",
+      "step": "send",
+      "status": "skipped",
+      "details": {}
+    }
+  ],
+  "content_review": {},
+  "presentation_review": {
+    "summary": {
+      "links_checked": 46,
+      "links_ok": 44,
+      "links_redirect": 0,
+      "links_error": 2,
+      "links_timeout": 0,
+      "formatting_issues": 0,
+      "fixes_applied": 0,
+      "unfixed_issues": 0
+    },
+    "broken_links": [
+      {
+        "url": "https://www.eia.gov/outlooks/steo/report/",
+        "code": 503,
+        "message": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "url": "https://www.washingtonpost.com/opinions/2026/01/12/trump-nuclear-energy-climate-change/",
+        "code": 0,
+        "message": "The read operation timed out"
+      }
+    ],
+    "redirects": [],
+    "formatting_warnings": [],
+    "fixes_applied": [],
+    "status": "warning",
+    "status_message": "2 broken links found"
+  }
+}
