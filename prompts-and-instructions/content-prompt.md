@@ -4,464 +4,49 @@ Copy everything below this line and paste into Claude.ai or Gemini:
 
 ————————————————————————————————
 
-Generate content for today's Energy & Permitting Daily Digest in the structured format below.
+# 1. TASK OVERVIEW
 
-DATE: [Today's date]
+Generate today's Energy & Permitting Daily Digest: a structured news briefing covering US energy policy, grid/transmission, permitting, and China developments.
 
-═══════════════════════════════════════════════════════════════════════════════
-⚠️  CRITICAL: DATE WINDOW ENFORCEMENT (READ FIRST)
-═══════════════════════════════════════════════════════════════════════════════
+**DATE:** [Today's date]
 
-Before searching or including ANY item, calculate the exact date boundaries:
-
-TODAY'S DATE: [Today's date]
-
-CALCULATE THESE BOUNDARIES NOW:
-• NEWS CUTOFF (72 hours):    [Today minus 3 days] — items MUST be dated ON OR AFTER this date
-• PUBLICATION CUTOFF (7 days): [Today minus 7 days] — items MUST be dated ON OR AFTER this date
-
-EXAMPLE: If today is January 20, 2026:
-• News window: January 17-20, 2026 ONLY (nothing before Jan 17)
-• Publications/Grantees window: January 13-20, 2026 ONLY (nothing before Jan 13)
-
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ MANDATORY PRE-INCLUSION CHECK FOR EVERY ITEM:                              │
-│                                                                             │
-│ 1. What is the EXACT publication/announcement date?                        │
-│ 2. Is that date WITHIN the allowed window? (Calculate, don't estimate)     │
-│ 3. If NO or UNCERTAIN → DO NOT INCLUDE. No exceptions.                     │
-│                                                                             │
-│ Items dated "January 2026" without a specific day = EXCLUDE                │
-│ Items dated before the cutoff = EXCLUDE (even if highly relevant)          │
-│ Items where you cannot verify the exact date = EXCLUDE                     │
-└─────────────────────────────────────────────────────────────────────────────┘
-
-COMMON MISTAKES TO AVOID:
-✗ Including a "January 5" item when the news cutoff is January 17
-✗ Including items dated "December 2025" in the news section
-✗ Using vague dates like "January 2026" or "this month"
-✗ Including older items because they're important or relevant
-✗ Confusing the date an article was WRITTEN ABOUT something with when it HAPPENED
-
-If an important event happened outside the window, you may REFERENCE it in a
-summary of a newer item, but do NOT create a separate entry for it.
-
-═══════════════════════════════════════════════════════════════════════════════
-
-SCOPE
+**SCOPE:**
 - Geography: US primary, China secondary
 - Energy: All sectors, weighted toward electricity/grid
 - Permitting: NEPA, environmental review, siting, interconnection queues, permitting reform
 
 ---
-COMPLETE SOURCE REFERENCE
----
 
-PRIORITY NEWS SOURCES:
+# 2. DATE BOUNDARIES (Calculate First)
 
-Trade Publications:
-- Utility Dive (utility industry, regulation) - utilitydive.com
-- E&E News Energywire (energy policy, Congress) - eenews.net
-- E&E News Greenwire (environmental policy) - eenews.net
-- RTO Insider (wholesale markets, RTOs) - rtoinsider.com
-- S&P Global Platts (commodities, markets) - spglobal.com/platts
-- Canary Media (clean energy) - canarymedia.com
-- Heatmap News (climate, energy policy) - heatmap.news
-- Power Magazine (generation, grid tech) - powermag.com
-- Solar Power World - solarpowerworldonline.com
-- Renewable Energy World - renewableenergyworld.com
-- Nuclear Newswire - ans.org/news
-- Natural Gas Intelligence - naturalgasintel.com
-- Transmission Hub - transmissionhub.com
+Before doing ANY searches, calculate and write down these boundaries:
 
-Wire Services:
-- Reuters Energy, Bloomberg Energy, Wall Street Journal, Politico Pro Energy, The Hill Energy
+```
+TODAY'S DATE:        _______________
+NEWS CUTOFF:         _______________ (Today minus 3 days)
+PUBLICATION CUTOFF:  _______________ (Today minus 7 days)
+```
 
-Government Sources:
-- FERC.gov (orders, notices, meeting agendas)
-- DOE.gov (announcements, funding, reports)
-- EIA.gov (data releases, analyses)
-- EPA.gov (rules, permits, enforcement)
-- BLM.gov (leasing, ROW permits)
-- CEQ.gov (NEPA guidance)
-- Federal Register (proposed/final rules)
-- Congress.gov (bills, hearings)
+**Example:** If today is January 20, 2026:
+- News window: January 17-20, 2026 ONLY
+- Publications/Grantees window: January 13-20, 2026 ONLY
 
-State-Level Sources (for major state actions):
-- California: CPUC, CEC announcements
-- Texas: PUCT, ERCOT filings
-- New York: NYSPSC, NYSERDA
-- PJM states: Check state utility commission announcements for major rate cases or resource plans
-
-RTO/ISO Sources:
-- PJM (Mid-Atlantic, Midwest) - pjm.com
-- MISO (Midwest, South) - misoenergy.org
-- CAISO (California) - caiso.com
-- ERCOT (Texas) - ercot.com
-- SPP (Central US) - spp.org
-- NYISO (New York) - nyiso.com
-- ISO-NE (New England) - iso-ne.com
-
----
-COMPANY WATCHLIST
----
-
-Investor-Owned Utilities (Top 20):
-NextEra Energy (NEE) - Florida, nationwide
-Duke Energy (DUK) - Southeast, Midwest
-Southern Company (SO) - Southeast
-Dominion Energy (D) - Virginia, Carolinas
-American Electric Power (AEP) - Midwest, Texas
-Xcel Energy (XEL) - Midwest, West
-Entergy (ETR) - Gulf South
-WEC Energy (WEC) - Wisconsin
-Evergy (EVRG) - Kansas, Missouri
-Ameren (AEE) - Missouri, Illinois
-CenterPoint (CNP) - Texas, Midwest
-DTE Energy (DTE) - Michigan
-Consumers Energy (CMS) - Michigan
-PPL Corporation (PPL) - Pennsylvania, Kentucky
-Eversource (ES) - New England
-National Grid (NGG) - Northeast
-Pacific Gas & Electric (PCG) - California
-Edison International (EIX) - California
-Pinnacle West/APS (PNW) - Arizona
-NRG Energy (NRG) - Texas, nationwide
-
-Independent Power Producers:
-Vistra (gas, nuclear, renewables), Constellation Energy (nuclear fleet), Talen Energy (nuclear, gas), AES Corporation (renewables, storage), Clearway Energy (renewables)
-
-Transmission Companies:
-ITC Holdings (Midwest), American Transmission Co (Wisconsin, Michigan), GridLiance (Southwest), NextEra Transmission (nationwide), LS Power Grid (competitive), Invenergy Transmission (Midwest), Pattern Energy (transmission, renewables)
-
-Renewable Developers:
-Invenergy, Apex Clean Energy, EDF Renewables, Avangrid Renewables, Ørsted (offshore), Vineyard Wind (offshore), Dominion Offshore Wind, Equinor (offshore), RWE, TotalEnergies, BP, Lightsource BP, Longroad Energy, 174 Power Global, Savion
-
-Nuclear (Advanced & Existing):
-Constellation Energy (existing fleet), Vistra (Comanche Peak), NuScale Power (SMR), TerraPower (advanced reactor), X-energy (HTGR), Kairos Power (molten salt), Oklo (microreactor), Holtec (SMR, decommissioning), GE Hitachi (BWRX-300), Westinghouse (AP1000, AP300), TVA (fleet + SMR plans), Energy Northwest (fleet + SMR), UAMPS (SMR consortium)
-
-Oil & Gas (energy transition relevance):
-ExxonMobil (CCS, hydrogen, lithium), Chevron (CCS, hydrogen, renewables), ConocoPhillips (LNG, Alaska), Williams Companies (gas pipelines, hydrogen), Kinder Morgan (pipelines, CCS), Enterprise Products, Cheniere (LNG), Venture Global (LNG), NextDecade (LNG)
-
-Technology / Data Centers:
-Meta (nuclear PPAs, large load), Google (24/7 carbon-free, nuclear), Microsoft (nuclear, renewables PPAs), Amazon/AWS (nuclear, data center load), Oracle (nuclear, data center deals), Digital Realty, Equinix, QTS Realty
-
-Equipment & Technology:
-GE Vernova (turbines, grid equipment), Siemens Energy (turbines, grid tech), Vestas (wind turbines), First Solar (solar panels), Tesla (storage, solar), Fluence (battery storage), Form Energy (long-duration storage)
-
----
-EVENTS CALENDAR
----
-
-Recurring Events:
-- FERC Open Meeting: Monthly (3rd Thursday) - ferc.gov
-- FERC Agenda: Weekly - ferc.gov
-- Senate ENR Committee: As scheduled - energy.senate.gov
-- House E&C Committee: As scheduled - energycommerce.house.gov
-- EIA Weekly Petroleum Status: Wednesday - eia.gov
-- EIA Natural Gas Storage: Thursday - eia.gov
-
-RTO/ISO Meetings:
-- PJM Board of Managers: Monthly
-- PJM Members Committee: Monthly
-- MISO Board of Directors: Monthly
-- CAISO Board of Governors: Monthly
-- ERCOT Board of Directors: Monthly
-- SPP Board of Directors: Quarterly
-
-Major Annual Conferences:
-- CERAWeek (March) - Global energy
-- EEI Financial Conference (November) - Utility industry
-- AWEA Cleanpower (Spring) - Wind industry
-- Solar Power International (Fall) - Solar industry
-- NARUC Annual Meeting (November) - State regulators
-- NASEO Annual Meeting (Fall) - State energy officials
-- GridFWD (Fall) - Grid modernization
-
-Comment Deadlines to Watch:
-Check Federal Register and FERC eLibrary for FERC rulemaking deadlines, EPA rule comment periods, BLM leasing protests, NEPA review comment periods, interconnection reform proceedings
-
----
-SEARCH QUERY TEMPLATES
----
-
-These are starting points, not exhaustive lists. Expand searches as needed
-to ensure comprehensive coverage. Use these patterns as a baseline, then
-follow leads to related stories, filings, and announcements.
-
-⚠️  CRITICAL: Always include SPECIFIC DATES in searches to filter results.
-Use the EXACT date range for your window (e.g., "January 17 2026" OR
-"January 18 2026" OR "January 19 2026" OR "January 20 2026" for a 72-hour
-window ending January 20).
-
-News & Statements (use specific dates, e.g., "January 18 2026"):
-- "FERC" + "order" + [specific date]
-- "transmission" + "project" + "approved" + [specific date]
-- "renewable" + "PPA" + "announced" + [specific date]
-- "offshore wind" + [company] + [specific date]
-- "grid reliability" + [RTO] + [specific date]
-- "permitting" + "reform" + [specific date]
-
-Publications (use date range for past 7 days):
-- site:eia.gov + "report" + [specific date range]
-- site:nrel.gov + "publication" + [specific date range]
-- site:rmi.org + [specific date range]
-- site:rff.org + [specific date range]
-
-Congressional Activity:
-- site:congress.gov + "energy" + [specific date]
-- "Senate" + "energy" + "hearing" + [specific date]
-- "House" + "energy" + "markup" + [specific date]
-
-Business Activity:
-- [company from list] + "announces" + [specific date]
-- "PPA" + "signed" + "MW" + [specific date]
-- "data center" + "power" + "agreement" + [specific date]
-
-AFTER EACH SEARCH: Verify the publication date on EVERY result before
-considering it for inclusion. Search results often include older content.
-
----
-COVERAGE GAPS TO NOTE
----
-
-Always acknowledge in Limitations section if not accessible:
-- Paywalled sources (S&P Global, Bloomberg Terminal)
-- Real-time FERC filings
-- Earnings call transcripts
-- State PUC dockets
-- International sources (IEA, IRENA)
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ TIME WINDOWS (ABSOLUTE — NO EXCEPTIONS)                                    │
+│                                                                             │
+│   News & Statements:     72 hours (3 days) — HARD CUTOFF                   │
+│   Publications:          7 days — HARD CUTOFF                              │
+│   Grantee Activities:    7 days — HARD CUTOFF                              │
+│                                                                             │
+│   An item dated January 5 CANNOT appear in a January 20 digest.            │
+│   "Relevance" and "importance" do NOT override date requirements.          │
+└─────────────────────────────────────────────────────────────────────────────┘
 
 ---
 
-For each section, actively search for news from these sources rather than relying on general searches.
+# 3. OUTPUT FORMAT
 
----
-SOURCE ACCURACY RULES (CRITICAL)
----
-
-1. PRIMARY vs. SECONDARY SOURCES
-   - Primary: Original reports, official announcements, filings, press releases
-   - Secondary: News articles, commentary, analysis about primary sources
-   - ALWAYS distinguish between them. Never present secondary coverage as the primary source.
-
-2. DATING
-   - Use the ORIGINAL publication date for reports/documents, not news coverage date
-   - Example: If a Jan 15 article discusses a December report, use the December date
-   - Format: "Report Name (December 2025)" not "Report Name · Jan 15, 2026"
-
-3. ACCURATE TITLES
-   - Title should reflect WHAT HAPPENED, not what the article is about
-   - WRONG: "NPC Permitting Report" (when source is an article about company supporting the report)
-   - RIGHT: "Williams Endorses NPC Permitting Report"
-
-4. REACTIONS/COMMENTARY
-   - Lead with WHO is reacting and WHAT they said
-   - Reference the original source with its actual date
-   - Example: "Williams CEO endorses NPC's December 2025 permitting report, calling for streamlined NEPA reviews"
-
-5. VERIFICATION REQUIREMENTS (MANDATORY — ZERO TOLERANCE)
-
-   ⚠️  THIS IS THE MOST IMPORTANT RULE IN THIS PROMPT ⚠️
-
-   Before including ANY item, you MUST complete this checklist:
-
-   □ Step 1: Find the EXACT date (day, month, year) on the source
-   □ Step 2: Calculate: Is [item date] ≥ [cutoff date]?
-   □ Step 3: If YES and verified → include. If NO or UNCERTAIN → EXCLUDE.
-
-   CUTOFF CALCULATION (do this math explicitly):
-   • News cutoff = [Today's date] minus 3 days
-   • Publication cutoff = [Today's date] minus 7 days
-
-   EXCLUSION TRIGGERS (if ANY apply, do not include):
-   ✗ Date is before the calculated cutoff
-   ✗ Date cannot be verified from the source itself
-   ✗ Date is vague (e.g., "January 2026" without specific day)
-   ✗ Only the news coverage date is available, not the event date
-   ✗ URL is inaccessible or content doesn't match
-
-   WHAT TO DO INSTEAD:
-   • If an older item provides important context → mention it briefly in a
-     newer item's summary, but do NOT create a separate entry
-   • If no items meet the date criteria for a section → write "Light news
-     day for [topic]" rather than including stale content
-
-   ┌─────────────────────────────────────────────────────────────────────┐
-   │ TIME WINDOW RULES (ABSOLUTE — NO EXCEPTIONS)                       │
-   │                                                                     │
-   │   News & Statements:     72 hours (3 days) — HARD CUTOFF           │
-   │   Publications:          7 days — HARD CUTOFF                      │
-   │   Grantee Activities:    7 days — HARD CUTOFF                      │
-   │                                                                     │
-   │   An item dated January 5 CANNOT appear in a January 20 digest.    │
-   │   An item dated December 18 CANNOT appear in a January 20 digest.  │
-   │   "Relevance" and "importance" do NOT override date requirements.  │
-   └─────────────────────────────────────────────────────────────────────┘
-
-6. LINK TO BEST SOURCE
-   - Prefer linking to primary sources when available
-   - If only secondary coverage exists, note that it's coverage of [original]
-
-7. DEDUPLICATION
-   - Avoid covering the same story in multiple sections
-   - Pick the single most relevant section for each story
-   - If a story spans multiple topics, choose the primary angle and mention secondary aspects in the summary
-
----
-SECTIONS TO GENERATE
----
-
-SECTION SIZE GUIDANCE:
-- Target 3-6 items per section for balanced coverage
-- Prioritize quality over quantity — include only genuinely significant items
-
-EMPTY/LIGHT SECTION HANDLING (REQUIRED):
-- If a section has 0 items within the time window: Include the section header
-  followed by "No significant developments within the 72-hour window." (or 7-day
-  for publications/grantees). Optionally note relevant recent context outside
-  the window.
-- If a section has only 1-2 marginal items: Note "Light news day for [topic]"
-  rather than padding with low-significance stories.
-- NEVER omit a required section entirely — always include the header with an
-  explanation if empty.
-
-1. Top Developments (3 bullet points summarizing biggest news)
-
-2. News & Statements (past 72 hours ONLY — verify each date)
-   ⚠️  Every item MUST have a verified date within the 72-hour window.
-   If you cannot verify the date, DO NOT INCLUDE the item.
-
-   ORGANIZE INTO SUBSECTIONS:
-   - Federal Regulatory Action
-   - Grid & Markets
-   - Offshore Wind (if applicable)
-   - Nuclear Developments (if applicable)
-   - Other subsections as needed based on news
-
-   Search: energy policy news, permitting reform, FERC orders, transmission projects, utility announcements, renewable energy, grid reliability, DOE announcements, offshore wind
-   - Focus on NEW announcements, not coverage of older items
-   - If covering reactions to older news, frame as reactions
-   - ADD TOPIC TAGS to relevant items
-   - EXCLUDE any item where the underlying event/announcement is outside 72 hours
-
-3. Publications (past 7 days ONLY — verify each date)
-   ⚠️  Every item MUST have a verified publication date within the 7-day window.
-   Use the document's publication date, NOT the date you found it.
-
-   Search: EIA, RMI, RFF, OECD, NREL, think tank reports, academic energy publications
-   - Use actual publication date, not discovery date
-   - If publication date cannot be verified, EXCLUDE the item
-
-4. Congressional & Executive Activity
-   Search: energy bills Congress, permitting reform legislation, FERC notices, Federal Register energy/environment, DOE announcements, EPA rules, BLM leasing
-   - Include docket numbers and filing dates where available
-   - If no activity within window: "No significant congressional or executive activity within the 72-hour window."
-
-5. Business Activity (include MW, $, timelines)
-   Search: energy project announcements, renewable PPAs, utility M&A, transmission projects, data center power deals, nuclear agreements
-   - Distinguish between: announced, filed, approved, completed
-   - ADD TOPIC TAGS to relevant items
-
-6. China
-   Search: China energy policy, State Grid, NDRC energy, China renewables, China carbon market, Five-Year Plan energy
-   - If no China news within window: "No significant China energy developments within the 72-hour window." May note relevant background context.
-
-7. Macro Trends (2-3 paragraphs)
-   - Connect today's items to ongoing themes (permitting stalemate, data center load growth, nuclear momentum, etc.)
-   - Cite specific items from this digest
-   - Avoid speculation; stick to observable patterns
-
-8. Market Context (optional — include if relevant to day's news)
-   - Notable power price movements (if significant)
-   - Natural gas price trends affecting generation economics
-   - Only include if market moves help contextualize the day's stories
-
-9. What to Watch This Week (table + Key Questions)
-   - Table of upcoming deadlines, hearings, FERC meetings, court rulings, conferences
-   - Verify dates against official calendars where possible
-
-10. Grantee Activities (see detailed instructions below)
-
-11. Limitations & Gaps
-    - List sources not systematically covered
-    - Note items where dates could not be verified
-    - Note paywalled sources that limited coverage
-
----
-GRANTEE ACTIVITIES — DETAILED INSTRUCTIONS
----
-
-┌─────────────────────────────────────────────────────────────────────┐
-│ GRANTEE SEARCH PROTOCOL (MANDATORY)                                │
-│                                                                     │
-│ □ Run ALL 21 individual organization searches (no exceptions)      │
-│ □ Search format: "[Org Name] energy/climate [month year]"          │
-│ □ Verify each item's date is within 7-day window BEFORE including  │
-│ □ Track which orgs were searched (report in LIMITATIONS)           │
-└─────────────────────────────────────────────────────────────────────┘
-
-ORGANIZATIONS BY TOPIC (21 total):
-
-**Nuclear & Advanced Energy:**
-- Nuclear Innovation Alliance
-- Third Way
-- Breakthrough Institute
-- ClearPath
-
-**Grid & Transmission:**
-- Grid Strategies
-- Bipartisan Policy Center
-- Rocky Mountain Institute (RMI)
-
-**Permitting & Siting:**
-- Institute for Progress
-- Environmental Policy Innovation Center
-- Siting Solutions Project / Clean Tomorrow
-- Siting Clean Collaborative
-
-**General Energy Policy:**
-- R Street Institute
-- Niskanen Center
-- Clean Air Task Force
-- RAND Corporation
-
-**Industry & Markets:**
-- Clean Energy Buyers Alliance
-- Electricity Customers Alliance
-
-**Conservative/Cross-partisan:**
-- American Conservation Coalition
-- Foundation for American Innovation
-- Rainey Center
-- Abundance Institute
-
-SEARCH PROCEDURE:
-1. Calculate your 7-day cutoff date: [Today] minus 7 days = _____
-2. Search each org individually: "[Org Name] energy [specific dates in window]"
-3. For EVERY result found:
-   a. Find the EXACT publication date on the source page
-   b. Compare: Is publication date ≥ cutoff date?
-   c. If YES → include
-   d. If NO or CANNOT VERIFY → add org to NO_PUBLICATIONS list
-4. If no results with verifiable dates in window: add to NO_PUBLICATIONS
-5. Log all orgs searched, even if no results found
-
-⚠️  A search result appearing does NOT mean it's within the date window.
-    You MUST verify each date against the calculated cutoff.
-
-FORMAT:
-- If publication found: Include org name, publication title, date, substantive summary (not just a quote), and URL
-- If NO publication found: Do NOT create a separate entry
-- At END of section: List all orgs with no recent publications in NO_PUBLICATIONS line
-
-LIMITATIONS SECTION MUST INCLUDE:
-- "Grantee orgs searched: All 21" (confirm all were searched)
-- If any org was not searched, explain why (should not happen)
-
-═══════════════════════════════════════════════════════════════════════════════
-OUTPUT FORMAT — Follow this structure exactly
-═══════════════════════════════════════════════════════════════════════════════
+Your output must follow this exact structure. Review this format BEFORE searching so you know what you're building toward.
 
 ```
 ===TOP_DEVELOPMENTS===
@@ -481,15 +66,6 @@ source: [Source Name]
 date: [Date]
 summary: [2-3 sentence summary with key numbers and implications]
 url: [Full URL]
-
-ITEM:
-tags: []
-significance: medium
-title: [Title]
-source: [Source]
-date: [Date]
-summary: [Summary]
-url: [URL]
 
 ##SUBSECTION: Grid & Markets
 
@@ -550,9 +126,9 @@ url: [URL]
 **[Theme 3 name].** [2-3 sentences on third theme.]
 
 ===MARKET_CONTEXT===
-[Optional section — include only if market moves are notable and relevant]
-- Power prices: [Brief note on any significant regional price movements]
-- Natural gas: [Henry Hub or regional price context if relevant]
+[Optional — include only if market moves are notable]
+- Oil prices: [Brief note]
+- Natural gas: [Henry Hub or regional price context]
 
 ===CALENDAR===
 
@@ -573,9 +149,6 @@ date: [Date]
 summary: [1-2 sentence summary of findings, not just a quote]
 url: [URL]
 
-ORG: [Another Org]
-...
-
 NO_PUBLICATIONS: [Org1], [Org2], [Org3]...
 
 ===LIMITATIONS===
@@ -584,87 +157,383 @@ NO_PUBLICATIONS: [Org1], [Org2], [Org3]...
 - Grantee orgs searched: All 21
 ```
 
-═══════════════════════════════════════════════════════════════════════════════
-
-VALID TAGS (use only these):
-- Nuclear
-- Data Center
-- Grid
-- Wind
-- Solar
-- Storage
-- Policy
+**VALID TAGS** (use max 2 per item):
+Nuclear, Data Center, Grid, Wind, Solar, Storage, Policy
 
 ---
-SIGNIFICANCE SCORING
+
+# 4. WORKFLOW
+
+Execute these steps IN ORDER:
+
+## Step 1: Calculate Date Boundaries
+Fill in the date boundaries in Section 2 above. All subsequent work depends on these cutoffs.
+
+## Step 2: Search for News (72-hour window)
+Search for news using queries from Appendix A. For each search result:
+1. Find the EXACT publication date on the source
+2. Check: Is date ≥ news cutoff?
+3. If YES → note for potential inclusion
+4. If NO or UNCERTAIN → skip
+
+**Include specific dates in search queries** (e.g., "FERC order January 18 2026")
+
+## Step 3: Search for Publications (7-day window)
+Search EIA, NREL, think tanks, etc. Apply same date verification.
+
+## Step 4: Search All 21 Grantee Organizations (7-day window)
+Search EVERY organization listed in Appendix B. No exceptions.
+- Search format: "[Org Name] energy [month year]"
+- Verify dates before including
+- Track all orgs searched
+
+## Step 5: Verify Every Item
+Before adding ANY item to your output, complete this check:
+```
+□ Date verified from source: _____
+□ Date ≥ cutoff: YES / NO
+□ URL accessible and matches summary: YES / NO
+```
+If any answer is NO or uncertain → EXCLUDE the item.
+
+## Step 6: Compile Output
+- Organize items into the format from Section 3
+- Assign significance scores (high/medium/low)
+- Select top 3 highest-significance items for TOP_DEVELOPMENTS
+- List grantees with no publications in NO_PUBLICATIONS
+- Note limitations and gaps
+
+## Step 7: Final Date Audit
+Before submitting, verify EVERY item one more time:
+```
+NEWS items (must be ≥ news cutoff):
+[ ] Item 1: Date _____ ≥ Cutoff _____ ? YES/NO
+[ ] Item 2: Date _____ ≥ Cutoff _____ ? YES/NO
+...
+
+PUBLICATIONS (must be ≥ publication cutoff):
+[ ] Item 1: Date _____ ≥ Cutoff _____ ? YES/NO
+...
+
+GRANTEES (must be ≥ publication cutoff):
+[ ] Item 1: Date _____ ≥ Cutoff _____ ? YES/NO
+...
+```
+REMOVE any item that fails this audit.
+
 ---
 
-Assign a significance level to each NEWS, BUSINESS, and CONGRESSIONAL item:
+# 5. SECTION REQUIREMENTS
 
-**HIGH** — Assign when ANY of these apply:
+## TOP_DEVELOPMENTS
+- 3 bullet points featuring the highest-significance items from the digest
+- Should reflect items scored as "high" significance
+
+## NEWS & STATEMENTS (72-hour window ONLY)
+Organize into subsections:
+- Federal Regulatory Action
+- Grid & Markets
+- Offshore Wind (if applicable)
+- Nuclear Developments (if applicable)
+- Other subsections as needed
+
+Requirements:
+- Every item MUST have a verified date within 72-hour window
+- Focus on NEW announcements, not coverage of older items
+- If covering reactions to older news, frame as reactions
+- Add topic tags to relevant items
+
+## PUBLICATIONS (7-day window ONLY)
+- Use the document's PUBLICATION date, not discovery date
+- If a Jan 15 article discusses a December report, the report is OUTSIDE the window
+
+## CONGRESSIONAL & EXECUTIVE ACTIVITY
+- Include docket numbers and filing dates where available
+- If no activity within window: "No significant congressional or executive activity within the 72-hour window."
+
+## BUSINESS ACTIVITY
+- Include MW, $, timelines where stated
+- Distinguish between: announced, filed, approved, completed
+- Add topic tags
+
+## CHINA
+- If no China news within window: "No significant China energy developments within the 72-hour window." May note relevant background context.
+
+## MACRO TRENDS
+- 2-3 paragraphs connecting items to ongoing themes
+- MUST cite specific items from this digest
+- Avoid speculation; stick to observable patterns
+
+## MARKET CONTEXT (Optional)
+- Include only if market moves help contextualize the day's stories
+
+## CALENDAR
+- Upcoming deadlines, hearings, FERC meetings, court rulings, conferences
+- Verify dates against official calendars
+
+## GRANTEES
+- Search ALL 21 organizations (see Appendix B)
+- Only include items with verified dates in 7-day window
+- List organizations with no recent publications in NO_PUBLICATIONS line
+
+## LIMITATIONS
+- List sources not systematically covered
+- Note paywalled sources that limited coverage
+- Confirm: "Grantee orgs searched: All 21"
+
+## EMPTY SECTION HANDLING
+- If 0 items within window: Include header + "No significant developments within the [72-hour/7-day] window."
+- If only 1-2 marginal items: "Light news day for [topic]"
+- NEVER omit a required section — always include header with explanation
+
+---
+
+# 6. VERIFICATION RULES
+
+## Date Verification (MANDATORY FOR EVERY ITEM)
+
+Before including ANY item:
+1. Find the EXACT date (day, month, year) on the source
+2. Calculate: Is [item date] ≥ [cutoff date]?
+3. If YES and verified → include
+4. If NO or UNCERTAIN → EXCLUDE
+
+**Exclusion triggers** (if ANY apply, do not include):
+- Date is before the calculated cutoff
+- Date cannot be verified from the source itself
+- Date is vague (e.g., "January 2026" without specific day)
+- Only the news coverage date is available, not the event date
+- URL is inaccessible or content doesn't match
+
+**What to do instead:**
+- If older item provides context → mention briefly in a newer item's summary
+- If no items meet criteria → note "Light news day" or "No significant developments"
+
+## Source Accuracy
+
+**Primary vs. Secondary Sources:**
+- Primary: Original reports, official announcements, filings, press releases
+- Secondary: News articles, commentary about primary sources
+- Always distinguish between them
+
+**Dating:**
+- Use ORIGINAL publication date for reports/documents
+- If a Jan 15 article discusses a December report → report date is December (outside window)
+
+**Titles:**
+- Describe WHAT HAPPENED, not what an article is about
+- WRONG: "NPC Permitting Report"
+- RIGHT: "Williams Endorses NPC Permitting Report"
+
+**Deduplication:**
+- Each story appears in ONE section only
+- Pick the most relevant section; mention secondary angles in summary
+
+## Significance Scoring
+
+Assign to each NEWS, BUSINESS, and CONGRESSIONAL item:
+
+**HIGH** — Any of these apply:
 - Scale: $1B+, 1GW+, affects 500,000+ customers
-- Precedent: "first," "largest," "landmark," "historic," "unprecedented"
+- Precedent: "first," "largest," "landmark," "historic"
 - Policy shift: Major FERC order, court ruling, legislation passed
-- Market signal: Major company entering/exiting market, significant M&A
+- Market signal: Major company entering/exiting, significant M&A
 - Immediate impact: Project approved, begins operation, construction starts
-- Cross-reference signal: Story appears in 3+ major sources (indicates broad importance)
+- Story appears in 3+ major sources
 
-**MEDIUM** — Assign when:
-- Notable but not exceptional scale ($100M-$1B, 100MW-1GW)
+**MEDIUM:**
+- Notable but not exceptional ($100M-$1B, 100MW-1GW)
 - Incremental progress on known projects
 - Regulatory filings or proposals (not final decisions)
-- Industry reactions to major news
-- Regional significance but not national
+- Regional significance
 
-**LOW** — Assign when:
-- Routine updates, minor project milestones
-- Commentary or analysis without new information
+**LOW:**
+- Routine updates, minor milestones
+- Commentary without new information
 - Local projects with limited broader implications
-- Scheduled events occurring as expected
-
-The Top Developments section should feature the 3 highest-significance items from the digest.
 
 ---
 
-QUALITY CHECKLIST (verify before outputting):
+# APPENDIX A: Sources & Search Guidance
 
-═══════════════════════════════════════════════════════════════════════════════
-⚠️  FINAL DATE AUDIT (REQUIRED BEFORE SUBMISSION)
-═══════════════════════════════════════════════════════════════════════════════
+## Priority News Sources
 
-Go through EVERY item in your output and verify:
+**Trade Publications:**
+- Utility Dive (utility industry, regulation) - utilitydive.com
+- E&E News Energywire (energy policy, Congress) - eenews.net
+- E&E News Greenwire (environmental policy) - eenews.net
+- RTO Insider (wholesale markets, RTOs) - rtoinsider.com
+- S&P Global Platts (commodities, markets) - spglobal.com/platts
+- Canary Media (clean energy) - canarymedia.com
+- Heatmap News (climate, energy policy) - heatmap.news
+- Power Magazine (generation, grid tech) - powermag.com
+- Solar Power World - solarpowerworldonline.com
+- Renewable Energy World - renewableenergyworld.com
+- Nuclear Newswire - ans.org/news
+- Natural Gas Intelligence - naturalgasintel.com
+- Transmission Hub - transmissionhub.com
 
-For NEWS items (72-hour window):
-[ ] Item 1: Date = _____ | Cutoff = _____ | ✓ Within window? YES/NO
-[ ] Item 2: Date = _____ | Cutoff = _____ | ✓ Within window? YES/NO
-(continue for all news items)
+**Wire Services:**
+Reuters Energy, Bloomberg Energy, Wall Street Journal, Politico Pro Energy, The Hill Energy
 
-For PUBLICATIONS (7-day window):
-[ ] Item 1: Date = _____ | Cutoff = _____ | ✓ Within window? YES/NO
-(continue for all publication items)
+**Government Sources:**
+- FERC.gov (orders, notices, meeting agendas)
+- DOE.gov (announcements, funding, reports)
+- EIA.gov (data releases, analyses)
+- EPA.gov (rules, permits, enforcement)
+- BLM.gov (leasing, ROW permits)
+- CEQ.gov (NEPA guidance)
+- Federal Register (proposed/final rules)
+- Congress.gov (bills, hearings)
 
-For GRANTEES (7-day window):
-[ ] Item 1: Date = _____ | Cutoff = _____ | ✓ Within window? YES/NO
-(continue for all grantee items)
+**State-Level Sources:**
+- California: CPUC, CEC
+- Texas: PUCT, ERCOT
+- New York: NYSPSC, NYSERDA
+- PJM states: State utility commission announcements
 
-If ANY item fails this audit, REMOVE IT before outputting.
+**RTO/ISO Sources:**
+- PJM (Mid-Atlantic, Midwest) - pjm.com
+- MISO (Midwest, South) - misoenergy.org
+- CAISO (California) - caiso.com
+- ERCOT (Texas) - ercot.com
+- SPP (Central US) - spp.org
+- NYISO (New York) - nyiso.com
+- ISO-NE (New England) - iso-ne.com
 
-═══════════════════════════════════════════════════════════════════════════════
+## Company Watchlist
 
-GENERAL QUALITY CHECKS:
-[ ] Each URL was visited and content verified before inclusion
-[ ] Each date was confirmed from the source (not assumed or inferred)
-[ ] NO items with vague dates like "January 2026" (must have specific day)
-[ ] Titles describe what happened, not what an article is about
-[ ] Primary sources used where available
-[ ] All URLs are complete and valid
-[ ] Tags used appropriately (max 2 per item)
-[ ] Significance assigned to each item (high/medium/low)
-[ ] Top Developments feature the 3 highest-significance items
-[ ] Grantees without publications listed in NO_PUBLICATIONS line
-[ ] Macro Trends cites specific items from this digest
+**Investor-Owned Utilities (Top 20):**
+NextEra Energy, Duke Energy, Southern Company, Dominion Energy, American Electric Power, Xcel Energy, Entergy, WEC Energy, Evergy, Ameren, CenterPoint, DTE Energy, Consumers Energy, PPL Corporation, Eversource, National Grid, Pacific Gas & Electric, Edison International, Pinnacle West/APS, NRG Energy
+
+**Independent Power Producers:**
+Vistra, Constellation Energy, Talen Energy, AES Corporation, Clearway Energy
+
+**Transmission Companies:**
+ITC Holdings, American Transmission Co, GridLiance, NextEra Transmission, LS Power Grid, Invenergy Transmission, Pattern Energy
+
+**Renewable Developers:**
+Invenergy, Apex Clean Energy, EDF Renewables, Avangrid Renewables, Ørsted, Vineyard Wind, Dominion Offshore Wind, Equinor, RWE, TotalEnergies, BP, Lightsource BP, Longroad Energy, 174 Power Global, Savion
+
+**Nuclear (Advanced & Existing):**
+Constellation Energy, Vistra, NuScale Power, TerraPower, X-energy, Kairos Power, Oklo, Holtec, GE Hitachi, Westinghouse, TVA, Energy Northwest, UAMPS
+
+**Oil & Gas (energy transition relevance):**
+ExxonMobil, Chevron, ConocoPhillips, Williams Companies, Kinder Morgan, Enterprise Products, Cheniere, Venture Global, NextDecade
+
+**Technology / Data Centers:**
+Meta, Google, Microsoft, Amazon/AWS, Oracle, Digital Realty, Equinix, QTS Realty
+
+**Equipment & Technology:**
+GE Vernova, Siemens Energy, Vestas, First Solar, Tesla, Fluence, Form Energy
+
+## Search Query Templates
+
+Always include SPECIFIC DATES in searches.
+
+**News & Statements:**
+- "FERC" + "order" + [specific date]
+- "transmission" + "approved" + [specific date]
+- "offshore wind" + [company] + [specific date]
+- "grid reliability" + [RTO] + [specific date]
+
+**Publications:**
+- site:eia.gov + "report" + [date range]
+- site:nrel.gov + [date range]
+- site:rmi.org + [date range]
+
+**Congressional:**
+- site:congress.gov + "energy" + [specific date]
+- "Senate energy hearing" + [specific date]
+
+**Business:**
+- [company] + "announces" + [specific date]
+- "PPA" + "MW" + [specific date]
+- "data center" + "power" + [specific date]
+
+## Events Calendar Reference
+
+**Recurring Events:**
+- FERC Open Meeting: Monthly (3rd Thursday)
+- EIA Weekly Petroleum Status: Wednesday
+- EIA Natural Gas Storage: Thursday
+
+**RTO/ISO Meetings:**
+- PJM Board/Members Committee: Monthly
+- MISO Board of Directors: Monthly
+- CAISO Board of Governors: Monthly
+- ERCOT Board of Directors: Monthly
+
+**Major Conferences:**
+- CERAWeek (March)
+- EEI Financial Conference (November)
+- AWEA Cleanpower (Spring)
+- Solar Power International (Fall)
+
+## Coverage Gaps to Acknowledge
+
+Note in Limitations if not accessible:
+- Paywalled sources (S&P Global, Bloomberg Terminal)
+- Real-time FERC filings
+- Earnings call transcripts
+- State PUC dockets
+- International sources (IEA, IRENA)
 
 ---
 
-OUTPUT:
-Generate the content in the exact structured format above. Include real, current news from the past 72 hours. Output only the structured content — no HTML, no explanation, no commentary.
+# APPENDIX B: Grantee Organizations
+
+**You MUST search ALL 21 organizations. No exceptions.**
+
+## Organizations by Topic
+
+**Nuclear & Advanced Energy (4):**
+1. Nuclear Innovation Alliance
+2. Third Way
+3. Breakthrough Institute
+4. ClearPath
+
+**Grid & Transmission (3):**
+5. Grid Strategies
+6. Bipartisan Policy Center
+7. Rocky Mountain Institute (RMI)
+
+**Permitting & Siting (4):**
+8. Institute for Progress
+9. Environmental Policy Innovation Center
+10. Siting Solutions Project / Clean Tomorrow
+11. Siting Clean Collaborative
+
+**General Energy Policy (4):**
+12. R Street Institute
+13. Niskanen Center
+14. Clean Air Task Force
+15. RAND Corporation
+
+**Industry & Markets (2):**
+16. Clean Energy Buyers Alliance
+17. Electricity Customers Alliance
+
+**Conservative/Cross-partisan (4):**
+18. American Conservation Coalition
+19. Foundation for American Innovation
+20. Rainey Center
+21. Abundance Institute
+
+## Search Procedure
+
+1. Calculate 7-day cutoff: [Today] minus 7 days = _____
+2. Search each org: "[Org Name] energy [month year]"
+3. For each result:
+   - Find EXACT publication date
+   - Is date ≥ cutoff? If YES → include. If NO → skip.
+4. Track all orgs searched
+5. List orgs with no recent publications in NO_PUBLICATIONS
+
+**A search result appearing does NOT mean it's within the date window. You MUST verify each date.**
+
+---
+
+# FINAL INSTRUCTION
+
+Generate the content in the exact structured format from Section 3. Include only verified, current news within the specified time windows. Output only the structured content — no HTML, no explanation, no commentary.
