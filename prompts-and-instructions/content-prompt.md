@@ -205,9 +205,19 @@ SOURCE ACCURACY RULES (CRITICAL)
    - Reference the original source with its actual date
    - Example: "Williams CEO endorses NPC's December 2025 permitting report, calling for streamlined NEPA reviews"
 
-5. VERIFICATION
-   - If uncertain about a date or fact: "(date unconfirmed)" or "(per [source])"
+5. VERIFICATION REQUIREMENTS (MANDATORY)
+   Before including ANY item, you MUST:
+   - Confirm the source URL is accessible and contains the claimed content
+   - Verify the publication date falls within the required time window:
+     * News: past 24-48 hours
+     * Publications: past 7 days
+     * Grantee activities: past 7 days
+   - If date cannot be confirmed from the source: mark "(date unconfirmed)"
+   - If URL is inaccessible or content doesn't match summary: DO NOT INCLUDE the item
    - When source is paywalled: "(paywalled - summary based on available excerpt)"
+
+   DO NOT guess or infer dates. If you cannot verify a date, either mark it
+   as unconfirmed or exclude the item entirely.
 
 6. LINK TO BEST SOURCE
    - Prefer linking to primary sources when available
@@ -458,7 +468,9 @@ The Top Developments section should feature the 3 highest-significance items fro
 ---
 
 QUALITY CHECKLIST (verify before outputting):
-[ ] Each date reflects actual event/publication date, not coverage date
+[ ] Each URL was visited and content verified before inclusion
+[ ] Each date was confirmed from the source (not assumed or inferred)
+[ ] All dates fall within required time windows (news: 24-48hrs, pubs: 7 days)
 [ ] Titles describe what happened, not what an article is about
 [ ] Primary sources used where available
 [ ] All URLs are complete and valid
@@ -467,6 +479,7 @@ QUALITY CHECKLIST (verify before outputting):
 [ ] Top Developments feature the 3 highest-significance items
 [ ] Grantees without publications listed in NO_PUBLICATIONS line
 [ ] Macro Trends cites specific items from this digest
+[ ] Items with unverifiable dates marked "(date unconfirmed)"
 
 ---
 
