@@ -314,8 +314,17 @@ SECTIONS TO GENERATE
 
 SECTION SIZE GUIDANCE:
 - Target 3-6 items per section for balanced coverage
-- If a section has fewer than 2 noteworthy items, note "Light news day for [topic]" rather than padding with marginal stories
 - Prioritize quality over quantity — include only genuinely significant items
+
+EMPTY/LIGHT SECTION HANDLING (REQUIRED):
+- If a section has 0 items within the time window: Include the section header
+  followed by "No significant developments within the 72-hour window." (or 7-day
+  for publications/grantees). Optionally note relevant recent context outside
+  the window.
+- If a section has only 1-2 marginal items: Note "Light news day for [topic]"
+  rather than padding with low-significance stories.
+- NEVER omit a required section entirely — always include the header with an
+  explanation if empty.
 
 1. Top Developments (3 bullet points summarizing biggest news)
 
@@ -347,6 +356,7 @@ SECTION SIZE GUIDANCE:
 4. Congressional & Executive Activity
    Search: energy bills Congress, permitting reform legislation, FERC notices, Federal Register energy/environment, DOE announcements, EPA rules, BLM leasing
    - Include docket numbers and filing dates where available
+   - If no activity within window: "No significant congressional or executive activity within the 72-hour window."
 
 5. Business Activity (include MW, $, timelines)
    Search: energy project announcements, renewable PPAs, utility M&A, transmission projects, data center power deals, nuclear agreements
@@ -355,6 +365,7 @@ SECTION SIZE GUIDANCE:
 
 6. China
    Search: China energy policy, State Grid, NDRC energy, China renewables, China carbon market, Five-Year Plan energy
+   - If no China news within window: "No significant China energy developments within the 72-hour window." May note relevant background context.
 
 7. Macro Trends (2-3 paragraphs)
    - Connect today's items to ongoing themes (permitting stalemate, data center load growth, nuclear momentum, etc.)
