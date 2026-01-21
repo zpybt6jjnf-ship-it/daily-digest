@@ -1,0 +1,40 @@
+name: Send Digest Email
+
+on:
+  push:
+    paths:
+      - 'digests/energy-digest-*.html'
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get latest digest filename
+        id: digest
+        run: |
+          LATEST=$(ls -t digests/energy-digest-*.html | head -1)
+          echo "file=$LATEST" >> $GITHUB_OUTPUT
+          echo "Found digest: $LATEST"
+
+      - name: Send email via Resend
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          # Read HTML and escape for JSON
+          HTML_CONTENT=$(cat "${{ steps.digest.outputs.file }}" | jq -Rs .)
+
+          # Send via Resend API
+          curl -X POST 'https://api.resend.com/emails' \
+            -H "Authorization: Bearer $RESEND_API_KEY" \
+            -H 'Content-Type: application/json' \
+            -d "{
+              \"from\": \"Energy Digest <onboarding@resend.dev>\",
+              \"to\": \"${{ vars.DIGEST_RECIPIENT }}\",
+              \"subject\": \"Energy & Permitting Daily Digest - $(date +%b\ %d,\ %Y)\",
+              \"html\": $HTML_CONTENT
+            }" \
+            --fail-with-body
+
+          echo "Email sent successfully!"
