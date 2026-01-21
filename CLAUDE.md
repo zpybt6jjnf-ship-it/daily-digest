@@ -113,3 +113,17 @@ The Top Developments section should feature the 3 highest-significance items fro
 - Distinguish primary sources from secondary coverage
 - For reactions: label as "Re: [Original] (Date)"
 - Flag uncertain facts: "(unverified)" or "(paywalled)"
+
+## Verification Requirements
+
+Before including any item, the LLM must:
+
+1. **Visit the URL** and confirm it contains the claimed content
+2. **Verify the date** falls within the required time window:
+   - News: past 24-48 hours
+   - Publications: past 7 days
+   - Grantee activities: past 7 days
+3. **Exclude unverifiable items** — do not guess or infer dates
+4. **Mark uncertain dates** as "(date unconfirmed)" if included
+
+Items that cannot be verified should be omitted rather than included with guessed information.
