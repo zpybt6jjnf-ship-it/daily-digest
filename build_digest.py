@@ -549,17 +549,11 @@ def build_html(sections, date_str=None):
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
                   <td valign="middle" width="52">
-                    <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-                      <defs>
-                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" style="stop-color:#2a9d8f" />
-                          <stop offset="50%" style="stop-color:#e9c46a" />
-                          <stop offset="100%" style="stop-color:#e76f51" />
-                        </linearGradient>
-                      </defs>
-                      <rect x="0" y="0" width="44" height="44" fill="#1a1a2e" rx="0" />
-                      <path d="M 0,30.8 L 3.52,28.6 L 7.92,33 L 12.32,22 L 16.72,26.4 L 22,13.2 L 27.28,24.2 L 31.68,19.8 L 36.08,26.4 L 40.48,24.2 L 44,28.6" stroke="url(#logoGradient)" stroke-width="1.32" fill="none" stroke-linejoin="round" />
-                    </svg>
+                    <table role="presentation" cellpadding="0" cellspacing="0" style="background-color: #1a1a2e; width: 44px; height: 44px;">
+                      <tr>
+                        <td align="center" valign="middle" style="font-family: 'Courier New', monospace; font-size: 18px; font-weight: 700; color: #e9c46a;">⚡</td>
+                      </tr>
+                    </table>
                   </td>
                   <td valign="middle" style="padding-left: 12px;">
                     <p style="margin: 0; font-size: 16px; font-weight: 700; color: #1a1a2e;">Energy & Permitting Daily Digest</p>
