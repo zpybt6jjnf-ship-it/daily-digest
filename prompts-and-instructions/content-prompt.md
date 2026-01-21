@@ -8,6 +8,46 @@ Generate content for today's Energy & Permitting Daily Digest in the structured 
 
 DATE: [Today's date]
 
+═══════════════════════════════════════════════════════════════════════════════
+⚠️  CRITICAL: DATE WINDOW ENFORCEMENT (READ FIRST)
+═══════════════════════════════════════════════════════════════════════════════
+
+Before searching or including ANY item, calculate the exact date boundaries:
+
+TODAY'S DATE: [Today's date]
+
+CALCULATE THESE BOUNDARIES NOW:
+• NEWS CUTOFF (72 hours):    [Today minus 3 days] — items MUST be dated ON OR AFTER this date
+• PUBLICATION CUTOFF (7 days): [Today minus 7 days] — items MUST be dated ON OR AFTER this date
+
+EXAMPLE: If today is January 20, 2026:
+• News window: January 17-20, 2026 ONLY (nothing before Jan 17)
+• Publications/Grantees window: January 13-20, 2026 ONLY (nothing before Jan 13)
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ MANDATORY PRE-INCLUSION CHECK FOR EVERY ITEM:                              │
+│                                                                             │
+│ 1. What is the EXACT publication/announcement date?                        │
+│ 2. Is that date WITHIN the allowed window? (Calculate, don't estimate)     │
+│ 3. If NO or UNCERTAIN → DO NOT INCLUDE. No exceptions.                     │
+│                                                                             │
+│ Items dated "January 2026" without a specific day = EXCLUDE                │
+│ Items dated before the cutoff = EXCLUDE (even if highly relevant)          │
+│ Items where you cannot verify the exact date = EXCLUDE                     │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+COMMON MISTAKES TO AVOID:
+✗ Including a "January 5" item when the news cutoff is January 17
+✗ Including items dated "December 2025" in the news section
+✗ Using vague dates like "January 2026" or "this month"
+✗ Including older items because they're important or relevant
+✗ Confusing the date an article was WRITTEN ABOUT something with when it HAPPENED
+
+If an important event happened outside the window, you may REFERENCE it in a
+summary of a newer item, but do NOT create a separate entry for it.
+
+═══════════════════════════════════════════════════════════════════════════════
+
 SCOPE
 - Geography: US primary, China secondary
 - Energy: All sectors, weighted toward electricity/grid
@@ -149,34 +189,37 @@ These are starting points, not exhaustive lists. Expand searches as needed
 to ensure comprehensive coverage. Use these patterns as a baseline, then
 follow leads to related stories, filings, and announcements.
 
-News & Statements:
-- "FERC" + "order" + [today/yesterday]
-- "transmission" + "project" + "approved"
-- "renewable" + "PPA" + "announced"
-- "offshore wind" + [company from list]
-- "grid reliability" + [RTO from list]
-- "permitting" + "reform" + "Congress"
+⚠️  CRITICAL: Always include SPECIFIC DATES in searches to filter results.
+Use the EXACT date range for your window (e.g., "January 17 2026" OR
+"January 18 2026" OR "January 19 2026" OR "January 20 2026" for a 72-hour
+window ending January 20).
 
-Publications:
-- site:eia.gov + "report" + [this week]
-- site:nrel.gov + "publication" + [recent]
-- site:rmi.org + [recent]
-- site:rff.org + [recent]
-- "think tank" + "energy" + "report"
+News & Statements (use specific dates, e.g., "January 18 2026"):
+- "FERC" + "order" + [specific date]
+- "transmission" + "project" + "approved" + [specific date]
+- "renewable" + "PPA" + "announced" + [specific date]
+- "offshore wind" + [company] + [specific date]
+- "grid reliability" + [RTO] + [specific date]
+- "permitting" + "reform" + [specific date]
+
+Publications (use date range for past 7 days):
+- site:eia.gov + "report" + [specific date range]
+- site:nrel.gov + "publication" + [specific date range]
+- site:rmi.org + [specific date range]
+- site:rff.org + [specific date range]
 
 Congressional Activity:
-- site:congress.gov + "energy" + [recent]
-- site:congress.gov + "permitting" + [recent]
-- "Senate" + "energy" + "hearing"
-- "House" + "energy" + "markup"
-- "FERC" + "nomination"
-- "permitting reform" + "Congress"
+- site:congress.gov + "energy" + [specific date]
+- "Senate" + "energy" + "hearing" + [specific date]
+- "House" + "energy" + "markup" + [specific date]
 
 Business Activity:
-- [company from list] + "announces"
-- "PPA" + "signed" + "MW"
-- "acquisition" + "energy" + "utility"
-- "data center" + "power" + "agreement"
+- [company from list] + "announces" + [specific date]
+- "PPA" + "signed" + "MW" + [specific date]
+- "data center" + "power" + "agreement" + [specific date]
+
+AFTER EACH SEARCH: Verify the publication date on EVERY result before
+considering it for inclusion. Search results often include older content.
 
 ---
 COVERAGE GAPS TO NOTE
@@ -217,30 +260,43 @@ SOURCE ACCURACY RULES (CRITICAL)
    - Reference the original source with its actual date
    - Example: "Williams CEO endorses NPC's December 2025 permitting report, calling for streamlined NEPA reviews"
 
-5. VERIFICATION REQUIREMENTS (MANDATORY)
-   Before including ANY item, you MUST:
-   - Confirm the source URL is accessible and contains the claimed content
-   - Verify the publication date falls within the required time window:
-     * News: past 72 hours (3 days)
-     * Publications: past 7 days
-     * Grantee activities: past 7 days
-   - If date cannot be confirmed from the source: mark "(date unconfirmed)"
-   - If URL is inaccessible or content doesn't match summary: DO NOT INCLUDE the item
-   - When source is paywalled: "(paywalled - summary based on available excerpt)"
+5. VERIFICATION REQUIREMENTS (MANDATORY — ZERO TOLERANCE)
 
-   DO NOT guess or infer dates. If you cannot verify a date, either mark it
-   as unconfirmed or exclude the item entirely.
+   ⚠️  THIS IS THE MOST IMPORTANT RULE IN THIS PROMPT ⚠️
+
+   Before including ANY item, you MUST complete this checklist:
+
+   □ Step 1: Find the EXACT date (day, month, year) on the source
+   □ Step 2: Calculate: Is [item date] ≥ [cutoff date]?
+   □ Step 3: If YES and verified → include. If NO or UNCERTAIN → EXCLUDE.
+
+   CUTOFF CALCULATION (do this math explicitly):
+   • News cutoff = [Today's date] minus 3 days
+   • Publication cutoff = [Today's date] minus 7 days
+
+   EXCLUSION TRIGGERS (if ANY apply, do not include):
+   ✗ Date is before the calculated cutoff
+   ✗ Date cannot be verified from the source itself
+   ✗ Date is vague (e.g., "January 2026" without specific day)
+   ✗ Only the news coverage date is available, not the event date
+   ✗ URL is inaccessible or content doesn't match
+
+   WHAT TO DO INSTEAD:
+   • If an older item provides important context → mention it briefly in a
+     newer item's summary, but do NOT create a separate entry
+   • If no items meet the date criteria for a section → write "Light news
+     day for [topic]" rather than including stale content
 
    ┌─────────────────────────────────────────────────────────────────────┐
-   │ TIME WINDOW RULES (STRICT)                                         │
+   │ TIME WINDOW RULES (ABSOLUTE — NO EXCEPTIONS)                       │
    │                                                                     │
-   │   News & Statements:     72 hours (3 days) — hard cutoff           │
-   │   Publications:          7 days — hard cutoff                      │
-   │   Grantee Activities:    7 days — hard cutoff                      │
+   │   News & Statements:     72 hours (3 days) — HARD CUTOFF           │
+   │   Publications:          7 days — HARD CUTOFF                      │
+   │   Grantee Activities:    7 days — HARD CUTOFF                      │
    │                                                                     │
-   │   NO EXCEPTIONS. Items outside these windows must be excluded,     │
-   │   even if relevant to ongoing stories. Reference older context     │
-   │   in summaries if needed, but do not create separate entries.      │
+   │   An item dated January 5 CANNOT appear in a January 20 digest.    │
+   │   An item dated December 18 CANNOT appear in a January 20 digest.  │
+   │   "Relevance" and "importance" do NOT override date requirements.  │
    └─────────────────────────────────────────────────────────────────────┘
 
 6. LINK TO BEST SOURCE
@@ -263,7 +319,10 @@ SECTION SIZE GUIDANCE:
 
 1. Top Developments (3 bullet points summarizing biggest news)
 
-2. News & Statements (past 72 hours)
+2. News & Statements (past 72 hours ONLY — verify each date)
+   ⚠️  Every item MUST have a verified date within the 72-hour window.
+   If you cannot verify the date, DO NOT INCLUDE the item.
+
    ORGANIZE INTO SUBSECTIONS:
    - Federal Regulatory Action
    - Grid & Markets
@@ -275,10 +334,15 @@ SECTION SIZE GUIDANCE:
    - Focus on NEW announcements, not coverage of older items
    - If covering reactions to older news, frame as reactions
    - ADD TOPIC TAGS to relevant items
+   - EXCLUDE any item where the underlying event/announcement is outside 72 hours
 
-3. Publications (past 7 days only)
+3. Publications (past 7 days ONLY — verify each date)
+   ⚠️  Every item MUST have a verified publication date within the 7-day window.
+   Use the document's publication date, NOT the date you found it.
+
    Search: EIA, RMI, RFF, OECD, NREL, think tank reports, academic energy publications
    - Use actual publication date, not discovery date
+   - If publication date cannot be verified, EXCLUDE the item
 
 4. Congressional & Executive Activity
    Search: energy bills Congress, permitting reform legislation, FERC notices, Federal Register energy/environment, DOE announcements, EPA rules, BLM leasing
@@ -362,11 +426,18 @@ ORGANIZATIONS BY TOPIC (21 total):
 - Abundance Institute
 
 SEARCH PROCEDURE:
-1. Search each org individually: "[Org Name] energy January 2026"
-2. If no results, try: "[Org Name] climate January 2026" or "[Org Name] report 2026"
-3. Check publication date — must be within 7 days
-4. If date outside window: DO NOT INCLUDE (add to NO_PUBLICATIONS)
+1. Calculate your 7-day cutoff date: [Today] minus 7 days = _____
+2. Search each org individually: "[Org Name] energy [specific dates in window]"
+3. For EVERY result found:
+   a. Find the EXACT publication date on the source page
+   b. Compare: Is publication date ≥ cutoff date?
+   c. If YES → include
+   d. If NO or CANNOT VERIFY → add org to NO_PUBLICATIONS list
+4. If no results with verifiable dates in window: add to NO_PUBLICATIONS
 5. Log all orgs searched, even if no results found
+
+⚠️  A search result appearing does NOT mean it's within the date window.
+    You MUST verify each date against the calculated cutoff.
 
 FORMAT:
 - If publication found: Include org name, publication title, date, substantive summary (not just a quote), and URL
@@ -546,9 +617,34 @@ The Top Developments section should feature the 3 highest-significance items fro
 ---
 
 QUALITY CHECKLIST (verify before outputting):
+
+═══════════════════════════════════════════════════════════════════════════════
+⚠️  FINAL DATE AUDIT (REQUIRED BEFORE SUBMISSION)
+═══════════════════════════════════════════════════════════════════════════════
+
+Go through EVERY item in your output and verify:
+
+For NEWS items (72-hour window):
+[ ] Item 1: Date = _____ | Cutoff = _____ | ✓ Within window? YES/NO
+[ ] Item 2: Date = _____ | Cutoff = _____ | ✓ Within window? YES/NO
+(continue for all news items)
+
+For PUBLICATIONS (7-day window):
+[ ] Item 1: Date = _____ | Cutoff = _____ | ✓ Within window? YES/NO
+(continue for all publication items)
+
+For GRANTEES (7-day window):
+[ ] Item 1: Date = _____ | Cutoff = _____ | ✓ Within window? YES/NO
+(continue for all grantee items)
+
+If ANY item fails this audit, REMOVE IT before outputting.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+GENERAL QUALITY CHECKS:
 [ ] Each URL was visited and content verified before inclusion
 [ ] Each date was confirmed from the source (not assumed or inferred)
-[ ] All dates fall within required time windows (news: 72hrs, pubs: 7 days)
+[ ] NO items with vague dates like "January 2026" (must have specific day)
 [ ] Titles describe what happened, not what an article is about
 [ ] Primary sources used where available
 [ ] All URLs are complete and valid
@@ -557,7 +653,6 @@ QUALITY CHECKLIST (verify before outputting):
 [ ] Top Developments feature the 3 highest-significance items
 [ ] Grantees without publications listed in NO_PUBLICATIONS line
 [ ] Macro Trends cites specific items from this digest
-[ ] Items with unverifiable dates marked "(date unconfirmed)"
 
 ---
 
