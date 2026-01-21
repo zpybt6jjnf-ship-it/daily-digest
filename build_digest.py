@@ -549,11 +549,52 @@ def build_html(sections, date_str=None):
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
                   <td valign="middle" width="52">
+                    <!--[if mso]>
                     <table role="presentation" cellpadding="0" cellspacing="0" style="background-color: #1a1a2e; width: 44px; height: 44px;">
-                      <tr>
-                        <td align="center" valign="middle" style="font-family: 'Courier New', monospace; font-size: 18px; font-weight: 700; color: #e9c46a;">⚡</td>
+                      <tr><td align="center" valign="middle" style="font-size: 18px; color: #e9c46a;">⚡</td></tr>
+                    </table>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="background-color: #1a1a2e; width: 44px; height: 44px; border-collapse: collapse;">
+                      <tr style="height: 8px;">
+                        <td colspan="10" style="height: 8px;"></td>
+                      </tr>
+                      <tr style="height: 4px;">
+                        <td colspan="4" style="height: 4px;"></td>
+                        <td colspan="2" style="height: 4px; background-color: #d4a84b;"></td>
+                        <td colspan="4" style="height: 4px;"></td>
+                      </tr>
+                      <tr style="height: 4px;">
+                        <td colspan="3" style="height: 4px;"></td>
+                        <td style="height: 4px; background-color: #8fba6a;"></td>
+                        <td colspan="2" style="height: 4px;"></td>
+                        <td style="height: 4px; background-color: #d98f5e;"></td>
+                        <td colspan="3" style="height: 4px;"></td>
+                      </tr>
+                      <tr style="height: 4px;">
+                        <td colspan="2" style="height: 4px;"></td>
+                        <td style="height: 4px; background-color: #5aab82;"></td>
+                        <td colspan="4" style="height: 4px;"></td>
+                        <td style="height: 4px; background-color: #de7f63;"></td>
+                        <td colspan="2" style="height: 4px;"></td>
+                      </tr>
+                      <tr style="height: 4px;">
+                        <td style="height: 4px;"></td>
+                        <td style="height: 4px; background-color: #3ea389;"></td>
+                        <td colspan="6" style="height: 4px;"></td>
+                        <td style="height: 4px; background-color: #e37358;"></td>
+                        <td style="height: 4px;"></td>
+                      </tr>
+                      <tr style="height: 4px;">
+                        <td style="height: 4px; background-color: #2a9d8f;"></td>
+                        <td colspan="8" style="height: 4px;"></td>
+                        <td style="height: 4px; background-color: #e76f51;"></td>
+                      </tr>
+                      <tr style="height: 16px;">
+                        <td colspan="10" style="height: 16px;"></td>
                       </tr>
                     </table>
+                    <!--<![endif]-->
                   </td>
                   <td valign="middle" style="padding-left: 12px;">
                     <p style="margin: 0; font-size: 16px; font-weight: 700; color: #1a1a2e;">Energy & Permitting Daily Digest</p>
