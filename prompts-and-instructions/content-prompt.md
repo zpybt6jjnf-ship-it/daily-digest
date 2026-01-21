@@ -11,7 +11,7 @@ DATE: [Today's date]
 SCOPE
 - Geography: US primary, China secondary
 - Energy: All sectors, weighted toward electricity/grid
-- Permitting: NEPA, environmental review, siting, interconnection, permitting reform
+- Permitting: NEPA, environmental review, siting, interconnection queues, permitting reform
 
 ---
 COMPLETE SOURCE REFERENCE
@@ -46,6 +46,12 @@ Government Sources:
 - CEQ.gov (NEPA guidance)
 - Federal Register (proposed/final rules)
 - Congress.gov (bills, hearings)
+
+State-Level Sources (for major state actions):
+- California: CPUC, CEC announcements
+- Texas: PUCT, ERCOT filings
+- New York: NYSPSC, NYSERDA
+- PJM states: Check state utility commission announcements for major rate cases or resource plans
 
 RTO/ISO Sources:
 - PJM (Mid-Atlantic, Midwest) - pjm.com
@@ -229,9 +235,19 @@ SOURCE ACCURACY RULES (CRITICAL)
    - Prefer linking to primary sources when available
    - If only secondary coverage exists, note that it's coverage of [original]
 
+7. DEDUPLICATION
+   - Avoid covering the same story in multiple sections
+   - Pick the single most relevant section for each story
+   - If a story spans multiple topics, choose the primary angle and mention secondary aspects in the summary
+
 ---
 SECTIONS TO GENERATE
 ---
+
+SECTION SIZE GUIDANCE:
+- Target 3-6 items per section for balanced coverage
+- If a section has fewer than 2 noteworthy items, note "Light news day for [topic]" rather than padding with marginal stories
+- Prioritize quality over quantity — include only genuinely significant items
 
 1. Top Developments (3 bullet points summarizing biggest news)
 
@@ -269,13 +285,18 @@ SECTIONS TO GENERATE
    - Cite specific items from this digest
    - Avoid speculation; stick to observable patterns
 
-8. What to Watch This Week (table + Key Questions)
+8. Market Context (optional — include if relevant to day's news)
+   - Notable power price movements (if significant)
+   - Natural gas price trends affecting generation economics
+   - Only include if market moves help contextualize the day's stories
+
+9. What to Watch This Week (table + Key Questions)
    - Table of upcoming deadlines, hearings, FERC meetings, court rulings, conferences
    - Verify dates against official calendars where possible
 
-9. Grantee Activities (see detailed instructions below)
+10. Grantee Activities (see detailed instructions below)
 
-10. Limitations & Gaps
+11. Limitations & Gaps
     - List sources not systematically covered
     - Note items where dates could not be verified
     - Note paywalled sources that limited coverage
@@ -402,6 +423,11 @@ url: [URL]
 
 **[Theme 3 name].** [2-3 sentences on third theme.]
 
+===MARKET_CONTEXT===
+[Optional section — include only if market moves are notable and relevant]
+- Power prices: [Brief note on any significant regional price movements]
+- Natural gas: [Henry Hub or regional price context if relevant]
+
 ===CALENDAR===
 
 | Date | Event | Significance |
@@ -455,6 +481,7 @@ Assign a significance level to each NEWS, BUSINESS, and CONGRESSIONAL item:
 - Policy shift: Major FERC order, court ruling, legislation passed
 - Market signal: Major company entering/exiting market, significant M&A
 - Immediate impact: Project approved, begins operation, construction starts
+- Cross-reference signal: Story appears in 3+ major sources (indicates broad importance)
 
 **MEDIUM** — Assign when:
 - Notable but not exceptional scale ($100M-$1B, 100MW-1GW)
