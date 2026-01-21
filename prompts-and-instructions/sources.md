@@ -181,6 +181,34 @@ Monitor these companies for announcements, filings, earnings, and news:
 
 ---
 
+## Grantee Organizations
+
+Search for recent publications/statements (past 7 days) from these organizations:
+
+| Organization | Focus |
+|:-------------|:------|
+| ClearPath | Clean energy innovation, nuclear, carbon management |
+| Clean Air Task Force | Decarbonization technology, policy advocacy |
+| Bipartisan Policy Center | Bipartisan energy and climate policy |
+| Clean Energy Buyers Alliance | Corporate renewable procurement |
+| R Street Institute | Free-market energy policy |
+| Breakthrough Institute | Ecomodernism, nuclear, innovation |
+| Third Way | Clean energy economy, nuclear |
+| Foundation for American Innovation | Technology policy, energy innovation |
+| Rainey Center | Conservative clean energy policy |
+| Siting Solutions Project / Clean Tomorrow | Infrastructure siting, permitting |
+| Electricity Customers Alliance | Large customer energy policy |
+| American Conservation Coalition | Conservative environmental policy |
+| Niskanen Center | Climate policy, carbon pricing |
+| Institute for Progress | Permitting reform, abundance agenda |
+| Environmental Policy Innovation Center | Environmental permitting, efficiency |
+| RAND Corporation | Energy security, policy analysis |
+| Nuclear Innovation Alliance | Advanced nuclear policy |
+| Grid Strategies | Transmission planning, grid policy |
+| Abundance Institute | Housing, energy, infrastructure abundance |
+
+---
+
 ## Events Calendar
 
 ### Recurring Events (Check Weekly)
