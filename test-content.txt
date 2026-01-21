@@ -1,0 +1,242 @@
+===TOP_DEVELOPMENTS===
+- Meta signs 6.6 GW nuclear deals with Oklo, Vistra, TerraPower — Landmark agreements to power AI data centers through 2045, with first deliveries from Vistra's Ohio plants
+- Federal judges lift offshore wind suspensions — Three projects (Coastal Virginia, Empire Wind, Revolution Wind) resume construction after successful legal challenges to Trump administration's lease suspensions
+- DOE awards $2.7 billion for uranium enrichment — Historic investment to restore domestic LEU/HALEU production capacity, supporting nuclear renaissance
+
+===NEWS===
+
+##SUBSECTION: Federal Regulatory Action
+
+ITEM:
+tags: [Policy, Grid]
+significance: high
+title: FERC Orders PJM to Reform Co-Location Tariff for Data Centers
+source: FERC
+date: January 15, 2026
+summary: FERC directed PJM to submit tariff revisions by January 19, 2026 addressing co-located generation and load arrangements. The December 2025 order found PJM's current tariff "unjust and unreasonable" for lacking clear provisions on interconnection for customers serving co-located load, primarily data centers seeking behind-the-meter arrangements.
+url: https://www.ferc.gov/news-events/news/ferc-directs-nations-largest-grid-operator-create-new-rules-embrace-innovation-and
+
+ITEM:
+tags: [Policy]
+significance: high
+title: Congress Passes FY2026 Energy and Water Appropriations
+source: Senate Appropriations Committee
+date: January 15, 2026
+summary: The Senate passed the $49 billion DOE funding bill with 82 votes; House passed it January 8. Package includes $375 million for Grid Deployment supply chain and $3.1 billion for Office of Nuclear Energy including Advanced Reactor Deployment Program and Gen3+ SMR awards.
+url: https://www.appropriations.senate.gov/news/majority/congress-approves-fy-2026-energy-and-water-development-appropriations-bill
+
+ITEM:
+tags: [Nuclear]
+significance: high
+title: DOE Awards $2.7 Billion for Uranium Enrichment Expansion
+source: Department of Energy
+date: January 5, 2026
+summary: DOE awarded funding to three companies to expand domestic LEU and HALEU enrichment capacity over 10 years. General Matter received $900 million for a facility at the former Paducah site in Kentucky. Global Laser Enrichment received $28 million for next-generation technology advancement.
+url: https://www.energy.gov/articles/us-department-energy-awards-27-billion-restore-american-uranium-enrichment
+
+##SUBSECTION: Grid & Markets
+
+ITEM:
+tags: [Grid]
+significance: high
+title: MISO Selects Developers for $1.2B 765-kV Transmission Project
+source: Utility Dive
+date: January 6, 2026
+summary: MISO selected Transource (AEP-Berkshire JV) to build the 190-mile Bell Center-Columbia-Sugar Creek 765-kV line, part of the $22 billion Long-Range Transmission Plan Tranche 2.1. Project must be operational by June 2034. Viridon Midcontinent selected for Wisconsin Southeast project.
+url: https://www.utilitydive.com/news/miso-selects-aep-berkshire-jv-to-build-12b-765-kv-transmission-project/809086/
+
+ITEM:
+tags: [Grid]
+significance: high
+title: New England Clean Energy Connect Begins Operations
+source: WBUR
+date: January 16, 2026
+summary: The 145-mile, 1,200 MW transmission line from Quebec to Massachusetts is now operational after a decade of development. The project will deliver hydropower to meet 20% of Massachusetts electricity needs under a 20-year fixed-price contract, saving ratepayers an estimated $50 million annually.
+url: https://www.wbur.org/news/2026/01/16/new-england-clean-energy-connect-cmp-corridor-avangrid-hydroquebec-massachusetts-maine
+
+ITEM:
+tags: [Grid]
+significance: medium
+title: EIA Forecasts Strongest Four-Year Electricity Demand Growth Since 2000
+source: EIA
+date: January 13, 2026
+summary: The January 2026 Short-Term Energy Outlook projects U.S. electricity demand growing 1% in 2026 and 3% in 2027, marking the first four consecutive years of growth since 2007. Data centers are the primary driver. Solar capacity additions of 69 GW expected through 2027.
+url: https://www.eia.gov/pressroom/releases/press582.php
+
+##SUBSECTION: Offshore Wind
+
+ITEM:
+tags: [Wind]
+significance: high
+title: Federal Judges Allow Three Offshore Wind Projects to Resume Construction
+source: CNBC
+date: January 16, 2026
+summary: Courts issued injunctions allowing Coastal Virginia Offshore Wind (176 turbines, 600,000+ homes), Empire Wind (54 turbines, $4B invested, 60% complete), and Revolution Wind (704 MW) to resume work. Projects had been suspended by Trump administration citing unspecified national security concerns.
+url: https://www.cnbc.com/2026/01/16/biggest-offshore-wind-project-in-us-to-resume-construction-after-judge-lifts-trump-suspension.html
+
+ITEM:
+tags: [Wind]
+significance: medium
+title: Vineyard Wind Sues Trump Administration Over Construction Halt
+source: WBUR
+date: January 15, 2026
+summary: Vineyard Wind filed suit challenging the stop-work order on its 62-turbine project, which was 95% complete and already generating power. The company reports $4.5 billion invested and losses of $2 million per day during the shutdown. Sunrise Wind hearing scheduled for February 2.
+url: https://www.wbur.org/news/2026/01/15/vineyard-wind-sues-trump-administration-construction-halt
+
+##SUBSECTION: Nuclear Developments
+
+ITEM:
+tags: [Nuclear, Data Center]
+significance: high
+title: Meta Signs 6.6 GW Nuclear Deals with Three Developers
+source: Meta
+date: January 9, 2026
+summary: Meta announced 20-year agreements with Vistra (2.1 GW from Perry, Davis-Besse, Beaver Valley plants in Ohio/PA), Oklo (1.2 GW from new Ohio reactors, first online 2030), and TerraPower (690 MW from two reactors by 2032, plus rights to 2.1 GW from six future projects). Total capacity: up to 6.6 GW.
+url: https://about.fb.com/news/2026/01/meta-nuclear-energy-projects-power-american-ai-leadership/
+
+===PUBLICATIONS===
+
+ITEM:
+tags: [Grid]
+significance: medium
+title: Short-Term Energy Outlook (January 2026)
+source: EIA
+date: January 13, 2026
+summary: First STEO to include 2027 forecasts. Projects Brent crude at $56/bbl in 2026 (down 19% from 2025). Natural gas at Henry Hub averaging $3.50/MMBtu in 2026, rising to $4.60 in 2027 on LNG export and power sector demand growth. Coal generation falls 9% in 2026.
+url: https://www.eia.gov/outlooks/steo/
+
+ITEM:
+tags: [Data Center]
+significance: medium
+title: Data Centers Drive US Electricity Demand to New Record
+source: EIA Today in Energy
+date: January 2026
+summary: Analysis of how large computing facilities are driving the strongest four-year electricity demand growth since 2000. Data center owners increasingly turning to nuclear power as a reliable 24/7 carbon-free source to meet their growing electricity needs.
+url: https://www.eia.gov/todayinenergy/detail.php?id=63304
+
+===CONGRESSIONAL===
+
+ITEM:
+tags: [Policy]
+significance: medium
+title: House E&C Holds Hearing on Energy Infrastructure Cybersecurity
+source: House Energy and Commerce Committee
+date: January 14, 2026
+summary: Chairman Bob Latta led hearing titled "Protecting America's Energy Infrastructure in Today's Cyber and Physical Threat Landscape." Committee considered package of security bills addressing grid vulnerabilities to adversarial threats.
+url: https://energycommerce.house.gov/committees/subcommittee/energy
+
+ITEM:
+tags: [Policy]
+significance: low
+title: House Natural Resources Subcommittee Holds Energy and Minerals Hearing
+source: House Natural Resources Committee
+date: January 13, 2026
+summary: The Subcommittee on Energy and Mineral Resources held a legislative hearing in room 1324 Longworth House Office Building examining energy and mineral resource policy.
+url: https://democrats-naturalresources.house.gov/hearings/energy-and-mineral-resources_january-13-2026
+
+===BUSINESS===
+
+ITEM:
+tags: [Nuclear, Data Center]
+significance: high
+title: Meta Secures Multi-GW Nuclear Portfolio for AI Infrastructure
+source: Utility Dive
+date: January 9, 2026
+summary: Meta's nuclear deals total up to 6.6 GW over 20 years. Vistra deal provides immediate capacity from existing Ohio/PA plants. Oklo's Ohio campus begins pre-construction in 2026 with first reactor by 2030. TerraPower reactors targeted for 2032 delivery. Follows December 2024 RFP for 1-4 GW.
+url: https://www.utilitydive.com/news/meta-nuclear-deal-oklo-vistra-terrapower-ai-data-centers/809215/
+
+ITEM:
+tags: [Storage]
+significance: medium
+title: Tallahassee Utility Announces $39M Battery Storage Project
+source: Government Market News
+date: January 2026
+summary: Tallahassee Electric and Gas Utility (Florida) announced utility-scale BESS at Birmingham Street Substation, supported by $28.7M DOE grant and $10.7M city match. Project will serve historically underserved neighborhoods.
+url: https://govmarketnews.com/battery-storage-projects-2026/
+
+ITEM:
+tags: [Solar, Storage]
+significance: high
+title: Scatec Signs 1.95 GW Solar + 3.9 GWh Storage PPA in Egypt
+source: Scatec
+date: January 11, 2026
+summary: Norwegian developer signed 25-year USD-denominated PPA for Africa's largest solar-plus-storage project. Plant expected to deliver approximately 6,000 GWh annually. Represents landmark renewable energy deal in Egypt.
+url: https://scatec.com/2026/01/11/scatec-signs-landmark-ppa-in-egypt-for-1-95-gw-solar-and-3-9-gwh-bess-capacity/
+
+ITEM:
+tags: [Wind]
+significance: medium
+title: Dominion's Coastal Virginia Offshore Wind Nears Power Delivery
+source: WHRO
+date: January 13, 2026
+summary: The 176-turbine, 2.6 GW project is scheduled to begin dispatching power by end of Q1 2026, helping meet demand in northern Virginia—the world's largest data center market. Construction resumed after court lifted federal suspension.
+url: https://www.whro.org/environment/2026-01-13/heres-whats-happening-with-the-federal-pause-on-dominion-energys-offshore-wind-farm-in-virginia-beach
+
+===CHINA===
+
+ITEM:
+tags: [Grid]
+significance: high
+title: State Grid Plans 40% Investment Surge Through 2030
+source: Bloomberg
+date: January 15, 2026
+summary: State Grid Corp. of China plans to boost spending to 4 trillion yuan ($574B) over five years, a 40% increase from 2021-2025. Grid investment reached 650 billion yuan in 2025 and could climb to 900 billion yuan in 2026 according to Roland Berger projections.
+url: https://www.bloomberg.com/news/articles/2026-01-15/china-s-state-grid-plans-40-surge-in-investment-through-2030
+
+ITEM:
+tags: [Grid, Policy]
+significance: medium
+title: China Accelerates West-to-East Transmission Buildout
+source: East Asia Forum
+date: January 13, 2026
+summary: NEA released guidelines targeting 420 GW west-to-east transmission capacity by 2030, with solar/wind share rising from 17% to 30% of transmitted electricity. Policy aims to reduce curtailment in renewable-rich western regions and deliver clean power to eastern demand centers.
+url: https://eastasiaforum.org/2026/01/13/chinas-clean-energy-a-20-year-success-story-now-requires-new-and-innovative-grid-solutions/
+
+ITEM:
+tags: [Policy]
+significance: medium
+title: China to Release 15th Five-Year Plan Energy Targets in March
+source: Carbon Brief
+date: January 2026
+summary: Experts anticipate publication of 2030 energy and climate targets as part of March 2026 five-year plan. Hints suggest China's emissions may be approaching peak. New guidelines mandate 60% on-site renewable consumption for pilot industrial parks, with 52 sites already designated.
+url: https://www.carbonbrief.org/experts-what-to-expect-from-china-on-energy-and-climate-action-in-2026/
+
+===MACRO_TRENDS===
+**Nuclear renaissance accelerates.** Meta's 6.6 GW nuclear portfolio announcement—spanning existing plants (Vistra) and advanced reactors (Oklo, TerraPower)—signals that tech companies are moving beyond pilot projects to utility-scale nuclear procurement. Combined with DOE's $2.7 billion uranium enrichment investment, the domestic nuclear supply chain is receiving unprecedented support from both private and public sectors.
+
+**Offshore wind faces legal gauntlet.** While three projects won injunctions to resume construction, two remain suspended and Vineyard Wind reports $2 million daily losses. The legal uncertainty creates a two-track industry: projects nearing completion may survive, but the permitting and legal risk premium for new developments has increased substantially.
+
+**Grid investment responds to load growth.** EIA's forecast of the strongest four-year electricity demand growth since 2000 is driving transmission expansion across all RTOs. MISO's $22 billion Long-Range Plan, the newly operational New England Clean Energy Connect, and China's 40% grid investment surge all reflect the urgency of building infrastructure to meet data center and electrification loads.
+
+===CALENDAR===
+
+| Date | Event | Significance |
+|------|-------|--------------|
+| January 19, 2026 | PJM co-location tariff filing deadline | FERC-mandated compliance filing on data center interconnection rules |
+| January 20, 2026 | PJM CIFP status report due | Informational report on expedited large load interconnection process |
+| January 22, 2026 | FERC Open Meeting | Monthly commission meeting, 10am ET at FERC headquarters |
+| January 31, 2026 | FY2026 appropriations deadline | President expected to sign energy funding bill before deadline |
+| February 2, 2026 | Sunrise Wind hearing | Court hearing on offshore wind lease suspension challenge |
+| February 10, 2026 | Next STEO release | EIA's February Short-Term Energy Outlook |
+
+===KEY_QUESTIONS===
+- Will additional offshore wind projects secure injunctions before construction windows close, or will extended delays strand investments?
+- How will PJM's co-location tariff revisions balance data center flexibility with grid reliability and cost allocation concerns?
+- Can advanced reactor developers (Oklo, TerraPower) meet Meta's aggressive 2030-2032 delivery timelines given licensing and construction uncertainties?
+
+===GRANTEES===
+
+ORG: ClearPath
+title: America's Next Revolution: Clean Industrial
+date: January 2026
+summary: Analysis of opportunities for clean industrial policy, emphasizing bipartisan approaches to manufacturing decarbonization and supply chain development for clean energy technologies.
+url: https://clearpath.org/our-take/americas-next-revolution-clean-industrial/
+
+NO_PUBLICATIONS: Clean Air Task Force, Bipartisan Policy Center, Clean Energy Buyers Alliance, R Street Institute, Breakthrough Institute, Third Way, Foundation for American Innovation, Rainey Center, Siting Solutions Project, Electricity Customers Alliance, American Conservation Coalition, Niskanen Center, Institute for Progress, Environmental Policy Innovation Center, RAND Corporation, Nuclear Innovation Alliance, Grid Strategies, Abundance Institute
+
+===LIMITATIONS===
+- Paywalled sources (S&P Global Platts, Bloomberg Terminal, Politico Pro) not fully accessible
+- Real-time FERC eLibrary filings not systematically reviewed
+- State PUC dockets not covered
+- Grantee organization searches limited to publicly available web content from past 7 days
+- Some dates based on news coverage rather than primary source verification

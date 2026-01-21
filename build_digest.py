@@ -101,7 +101,7 @@ def parse_news_section(content):
         elif line.strip() == 'ITEM:':
             if current_item and current_subsection:
                 current_subsection['items'].append(current_item)
-            current_item = {'tags': [], 'title': '', 'source': '', 'date': '', 'summary': '', 'url': ''}
+            current_item = {'tags': [], 'significance': '', 'title': '', 'source': '', 'date': '', 'summary': '', 'url': ''}
 
         elif current_item is not None:
             if line.startswith('tags:'):
@@ -110,6 +110,8 @@ def parse_news_section(content):
                 tags_str = tags_str.strip('[]')
                 if tags_str:
                     current_item['tags'] = [t.strip() for t in tags_str.split(',') if t.strip()]
+            elif line.startswith('significance:'):
+                current_item['significance'] = line.replace('significance:', '').strip().lower()
             elif line.startswith('title:'):
                 current_item['title'] = line.replace('title:', '').strip()
             elif line.startswith('source:'):
@@ -141,13 +143,15 @@ def parse_items(content):
         if line.strip() == 'ITEM:':
             if current_item:
                 items.append(current_item)
-            current_item = {'tags': [], 'title': '', 'source': '', 'date': '', 'summary': '', 'url': ''}
+            current_item = {'tags': [], 'significance': '', 'title': '', 'source': '', 'date': '', 'summary': '', 'url': ''}
 
         elif current_item is not None:
             if line.startswith('tags:'):
                 tags_str = line.replace('tags:', '').strip().strip('[]')
                 if tags_str:
                     current_item['tags'] = [t.strip() for t in tags_str.split(',') if t.strip()]
+            elif line.startswith('significance:'):
+                current_item['significance'] = line.replace('significance:', '').strip().lower()
             elif line.startswith('title:'):
                 current_item['title'] = line.replace('title:', '').strip()
             elif line.startswith('source:'):
@@ -277,7 +281,7 @@ def render_news_item(item):
     return f'''
           <tr>
             <td style="padding: 0 28px 14px 28px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background: #faf8f5; border-radius: 8px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background: #faf8f5; border-radius: 8px; border-left: 3px solid #e76f51;">
                 <tr>
                   <td style="padding: 14px 16px;">{tags_html}<p style="font-size: 14px; font-weight: 600; color: #1a1a2e; margin: 0 0 4px 0;">{html_escape(item.get('title', ''))}</p>
                     <p style="font-family: 'Courier New', monospace; font-size: 11px; color: #8a8a9a; margin: 0 0 8px 0;"><span style="color: #2a9d8f; font-weight: 500;">{html_escape(item.get('source', ''))}</span> · {html_escape(item.get('date', ''))}</p>

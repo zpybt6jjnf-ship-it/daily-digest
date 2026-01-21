@@ -312,6 +312,7 @@ OUTPUT FORMAT — Follow this structure exactly
 
 ITEM:
 tags: [tag1, tag2]
+significance: high
 title: [What Happened — descriptive title]
 source: [Source Name]
 date: [Date]
@@ -320,6 +321,7 @@ url: [Full URL]
 
 ITEM:
 tags: []
+significance: medium
 title: [Title]
 source: [Source]
 date: [Date]
@@ -337,6 +339,7 @@ ITEM:
 
 ITEM:
 tags: []
+significance: medium
 title: [Publication Title]
 source: [Publisher]
 date: [Publication Date]
@@ -347,6 +350,7 @@ url: [URL]
 
 ITEM:
 tags: []
+significance: high
 title: [What Happened]
 source: [Source]
 date: [Date]
@@ -357,6 +361,7 @@ url: [URL]
 
 ITEM:
 tags: [Nuclear, Data Center, Grid, Wind, Solar, Storage, Policy]
+significance: high
 title: [What Happened]
 source: [Source]
 date: [Date]
@@ -367,6 +372,7 @@ url: [URL]
 
 ITEM:
 tags: []
+significance: medium
 title: [Title]
 source: [Source]
 date: [Date]
@@ -422,6 +428,34 @@ VALID TAGS (use only these):
 - Policy
 
 ---
+SIGNIFICANCE SCORING
+---
+
+Assign a significance level to each NEWS, BUSINESS, and CONGRESSIONAL item:
+
+**HIGH** — Assign when ANY of these apply:
+- Scale: $1B+, 1GW+, affects 500,000+ customers
+- Precedent: "first," "largest," "landmark," "historic," "unprecedented"
+- Policy shift: Major FERC order, court ruling, legislation passed
+- Market signal: Major company entering/exiting market, significant M&A
+- Immediate impact: Project approved, begins operation, construction starts
+
+**MEDIUM** — Assign when:
+- Notable but not exceptional scale ($100M-$1B, 100MW-1GW)
+- Incremental progress on known projects
+- Regulatory filings or proposals (not final decisions)
+- Industry reactions to major news
+- Regional significance but not national
+
+**LOW** — Assign when:
+- Routine updates, minor project milestones
+- Commentary or analysis without new information
+- Local projects with limited broader implications
+- Scheduled events occurring as expected
+
+The Top Developments section should feature the 3 highest-significance items from the digest.
+
+---
 
 QUALITY CHECKLIST (verify before outputting):
 [ ] Each date reflects actual event/publication date, not coverage date
@@ -429,6 +463,8 @@ QUALITY CHECKLIST (verify before outputting):
 [ ] Primary sources used where available
 [ ] All URLs are complete and valid
 [ ] Tags used appropriately (max 2 per item)
+[ ] Significance assigned to each item (high/medium/low)
+[ ] Top Developments feature the 3 highest-significance items
 [ ] Grantees without publications listed in NO_PUBLICATIONS line
 [ ] Macro Trends cites specific items from this digest
 
