@@ -395,7 +395,7 @@ GRANTEE ACTIVITIES — DETAILED INSTRUCTIONS
 ┌─────────────────────────────────────────────────────────────────────┐
 │ GRANTEE SEARCH PROTOCOL (MANDATORY)                                │
 │                                                                     │
-│ □ Run MINIMUM 15 individual organization searches                  │
+│ □ Run ALL 21 individual organization searches (no exceptions)      │
 │ □ Search format: "[Org Name] energy/climate [month year]"          │
 │ □ Verify each item's date is within 7-day window BEFORE including  │
 │ □ Track which orgs were searched (report in LIMITATIONS)           │
@@ -456,8 +456,8 @@ FORMAT:
 - At END of section: List all orgs with no recent publications in NO_PUBLICATIONS line
 
 LIMITATIONS SECTION MUST INCLUDE:
-- "Grantee orgs searched: [list]"
-- "Grantee orgs NOT searched: [list, if any]"
+- "Grantee orgs searched: All 21" (confirm all were searched)
+- If any org was not searched, explain why (should not happen)
 
 ═══════════════════════════════════════════════════════════════════════════════
 OUTPUT FORMAT — Follow this structure exactly
@@ -581,8 +581,7 @@ NO_PUBLICATIONS: [Org1], [Org2], [Org3]...
 ===LIMITATIONS===
 - [Limitation 1: e.g., Paywalled sources not fully accessible]
 - [Limitation 2]
-- Grantee orgs searched: [list all searched]
-- Grantee orgs NOT searched: [list any skipped, or "None"]
+- Grantee orgs searched: All 21
 ```
 
 ═══════════════════════════════════════════════════════════════════════════════
