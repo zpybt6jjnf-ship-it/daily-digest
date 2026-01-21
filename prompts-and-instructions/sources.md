@@ -183,30 +183,52 @@ Monitor these companies for announcements, filings, earnings, and news:
 
 ## Grantee Organizations
 
-Search for recent publications/statements (past 7 days) from these organizations:
+Search for recent publications/statements (past 7 days) from these organizations.
+**Each org requires its own dedicated search query.**
 
+### Nuclear & Advanced Energy
 | Organization | Focus |
 |:-------------|:------|
-| ClearPath | Clean energy innovation, nuclear, carbon management |
-| Clean Air Task Force | Decarbonization technology, policy advocacy |
-| Bipartisan Policy Center | Bipartisan energy and climate policy |
-| Clean Energy Buyers Alliance | Corporate renewable procurement |
-| R Street Institute | Free-market energy policy |
-| Breakthrough Institute | Ecomodernism, nuclear, innovation |
+| Nuclear Innovation Alliance | Advanced nuclear policy |
 | Third Way | Clean energy economy, nuclear |
-| Foundation for American Innovation | Technology policy, energy innovation |
-| Rainey Center | Conservative clean energy policy |
-| Siting Solutions Project / Clean Tomorrow | Infrastructure siting, permitting |
-| Siting Clean Collaborative | Clean energy siting, community engagement |
-| Electricity Customers Alliance | Large customer energy policy |
-| American Conservation Coalition | Conservative environmental policy |
-| Niskanen Center | Climate policy, carbon pricing |
+| Breakthrough Institute | Ecomodernism, nuclear, innovation |
+| ClearPath | Clean energy innovation, nuclear, carbon management |
+
+### Grid & Transmission
+| Organization | Focus |
+|:-------------|:------|
+| Grid Strategies | Transmission planning, grid policy |
+| Bipartisan Policy Center | Bipartisan energy and climate policy |
+| Rocky Mountain Institute (RMI) | Clean energy transition, efficiency |
+
+### Permitting & Siting
+| Organization | Focus |
+|:-------------|:------|
 | Institute for Progress | Permitting reform, abundance agenda |
 | Environmental Policy Innovation Center | Environmental permitting, efficiency |
+| Siting Solutions Project / Clean Tomorrow | Infrastructure siting, permitting |
+| Siting Clean Collaborative | Clean energy siting, community engagement |
+
+### General Energy Policy
+| Organization | Focus |
+|:-------------|:------|
+| R Street Institute | Free-market energy policy |
+| Niskanen Center | Climate policy, carbon pricing |
+| Clean Air Task Force | Decarbonization technology, policy advocacy |
 | RAND Corporation | Energy security, policy analysis |
-| Nuclear Innovation Alliance | Advanced nuclear policy |
-| Grid Strategies | Transmission planning, grid policy |
-| Rocky Mountain Institute (RMI) | Clean energy transition, efficiency |
+
+### Industry & Markets
+| Organization | Focus |
+|:-------------|:------|
+| Clean Energy Buyers Alliance | Corporate renewable procurement |
+| Electricity Customers Alliance | Large customer energy policy |
+
+### Conservative / Cross-partisan
+| Organization | Focus |
+|:-------------|:------|
+| American Conservation Coalition | Conservative environmental policy |
+| Foundation for American Innovation | Technology policy, energy innovation |
+| Rainey Center | Conservative clean energy policy |
 | Abundance Institute | Housing, energy, infrastructure abundance |
 
 ---

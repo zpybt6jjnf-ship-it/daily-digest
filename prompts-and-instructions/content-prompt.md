@@ -317,44 +317,65 @@ SECTION SIZE GUIDANCE:
 GRANTEE ACTIVITIES — DETAILED INSTRUCTIONS
 ---
 
-Search for recent publications/statements (past 7 days) from these organizations:
-- ClearPath
-- Clean Air Task Force
-- Bipartisan Policy Center
-- Clean Energy Buyers Alliance
-- R Street Institute
-- Breakthrough Institute
-- Third Way
-- Foundation for American Innovation
-- Rainey Center
-- Siting Solutions Project / Clean Tomorrow
-- Siting Clean Collaborative
-- Electricity Customers Alliance
-- American Conservation Coalition
-- Niskanen Center
-- Institute for Progress
-- Environmental Policy Innovation Center
-- RAND Corporation
-- Nuclear Innovation Alliance
-- Grid Strategies
-- Rocky Mountain Institute (RMI)
-- Abundance Institute
-
-Also search for similar organizations and note findings under "Similar Organizations"
-
 ┌─────────────────────────────────────────────────────────────────────┐
-│ SEARCH REQUIREMENT: Each organization must have its own dedicated  │
-│ search query. Do NOT rely on a single combined search — individual │
-│ org names get lost. Run separate searches like:                    │
-│   "[Org Name] energy January 2026"                                 │
-│   "[Org Name] climate January 2026"                                │
-│   "[Org Name] permitting January 2026"                             │
+│ GRANTEE SEARCH PROTOCOL (MANDATORY)                                │
+│                                                                     │
+│ □ Run MINIMUM 15 individual organization searches                  │
+│ □ Search format: "[Org Name] energy/climate [month year]"          │
+│ □ Verify each item's date is within 7-day window BEFORE including  │
+│ □ Track which orgs were searched (report in LIMITATIONS)           │
 └─────────────────────────────────────────────────────────────────────┘
 
-Format:
+ORGANIZATIONS BY TOPIC (21 total):
+
+**Nuclear & Advanced Energy:**
+- Nuclear Innovation Alliance
+- Third Way
+- Breakthrough Institute
+- ClearPath
+
+**Grid & Transmission:**
+- Grid Strategies
+- Bipartisan Policy Center
+- Rocky Mountain Institute (RMI)
+
+**Permitting & Siting:**
+- Institute for Progress
+- Environmental Policy Innovation Center
+- Siting Solutions Project / Clean Tomorrow
+- Siting Clean Collaborative
+
+**General Energy Policy:**
+- R Street Institute
+- Niskanen Center
+- Clean Air Task Force
+- RAND Corporation
+
+**Industry & Markets:**
+- Clean Energy Buyers Alliance
+- Electricity Customers Alliance
+
+**Conservative/Cross-partisan:**
+- American Conservation Coalition
+- Foundation for American Innovation
+- Rainey Center
+- Abundance Institute
+
+SEARCH PROCEDURE:
+1. Search each org individually: "[Org Name] energy January 2026"
+2. If no results, try: "[Org Name] climate January 2026" or "[Org Name] report 2026"
+3. Check publication date — must be within 7 days
+4. If date outside window: DO NOT INCLUDE (add to NO_PUBLICATIONS)
+5. Log all orgs searched, even if no results found
+
+FORMAT:
 - If publication found: Include org name, publication title, date, substantive summary (not just a quote), and URL
-- If NO publication found for an org: Do NOT create a separate entry
-- At the END of the section: List all orgs with no recent publications in ONE line
+- If NO publication found: Do NOT create a separate entry
+- At END of section: List all orgs with no recent publications in NO_PUBLICATIONS line
+
+LIMITATIONS SECTION MUST INCLUDE:
+- "Grantee orgs searched: [list]"
+- "Grantee orgs NOT searched: [list, if any]"
 
 ═══════════════════════════════════════════════════════════════════════════════
 OUTPUT FORMAT — Follow this structure exactly
@@ -478,7 +499,8 @@ NO_PUBLICATIONS: [Org1], [Org2], [Org3]...
 ===LIMITATIONS===
 - [Limitation 1: e.g., Paywalled sources not fully accessible]
 - [Limitation 2]
-- [Limitation 3]
+- Grantee orgs searched: [list all searched]
+- Grantee orgs NOT searched: [list any skipped, or "None"]
 ```
 
 ═══════════════════════════════════════════════════════════════════════════════

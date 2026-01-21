@@ -156,6 +156,18 @@ For major state actions, check:
 - **New York**: NYSPSC, NYSERDA
 - **PJM states**: State utility commission announcements
 
-### Grantee Organization Searches
+### Grantee Organization Searches (21 orgs)
 
-**Each grantee organization requires its own dedicated search query.** Combined searches miss most results. Run individual searches like `"[Org Name] energy January 2026"` for each of the 19 listed organizations.
+**Mandatory protocol:**
+1. Run **minimum 15 individual searches** (one per org)
+2. Search format: `"[Org Name] energy [month year]"`
+3. Verify dates are within 7-day window before including
+4. Report in LIMITATIONS which orgs were/weren't searched
+
+**Organizations by topic:**
+- Nuclear: NIA, Third Way, Breakthrough Institute, ClearPath
+- Grid: Grid Strategies, BPC, RMI
+- Permitting: Institute for Progress, EPIC, Siting Solutions, Siting Clean Collaborative
+- Policy: R Street, Niskanen, CATF, RAND
+- Industry: CEBA, Electricity Customers Alliance
+- Conservative: ACC, FAI, Rainey Center, Abundance Institute
