@@ -467,7 +467,7 @@ transition: all 0.15s ease;
 - Gradient bar (teal → gold) below header
 - Top Developments: cream box with teal left border
 - Section headers: 16px bold with coral highlight gradient
-- News items: cream cards (8px radius, 14px padding)
+- News items: cream cards (8px radius, 14px padding, 3px coral left border)
 - Tables: cream header row, 1px borders
 - Key Questions: cream box with gold left border
 - Dashed dividers (1px dashed `#d4d2cd`) between sections
