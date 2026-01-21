@@ -278,9 +278,11 @@ site:rff.org + [recent]
 ### Congressional Activity
 ```
 site:congress.gov + "energy" + [recent]
+site:congress.gov + "permitting" + [recent]
 "Senate" + "energy" + "hearing"
 "House" + "energy" + "markup"
 "FERC" + "nomination"
+"permitting reform" + "Congress"
 ```
 
 ### Business Activity

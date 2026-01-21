@@ -156,9 +156,11 @@ Publications:
 
 Congressional Activity:
 - site:congress.gov + "energy" + [recent]
+- site:congress.gov + "permitting" + [recent]
 - "Senate" + "energy" + "hearing"
 - "House" + "energy" + "markup"
 - "FERC" + "nomination"
+- "permitting reform" + "Congress"
 
 Business Activity:
 - [company from list] + "announces"
@@ -247,7 +249,7 @@ SECTIONS TO GENERATE
    - Use actual publication date, not discovery date
 
 4. Congressional & Executive Activity
-   Search: energy bills Congress, FERC notices, Federal Register energy/environment, DOE announcements, EPA rules, BLM leasing
+   Search: energy bills Congress, permitting reform legislation, FERC notices, Federal Register energy/environment, DOE announcements, EPA rules, BLM leasing
    - Include docket numbers and filing dates where available
 
 5. Business Activity (include MW, $, timelines)
