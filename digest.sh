@@ -12,6 +12,7 @@
 #   copy   - Copy content prompt to clipboard, open Claude.ai
 #   build  - Convert content file to branded HTML
 #   view   - View latest digest in browser
+#   send   - Build, commit, push (triggers email)
 #   help   - Show this help
 
 cd "$(dirname "$0")"
@@ -63,6 +64,34 @@ case "${1:-help}" in
     fi
     ;;
 
+  send)
+    # Build if content file provided
+    if [ -n "$2" ]; then
+      if [ ! -f "$2" ]; then
+        echo "Error: File not found: $2"
+        exit 1
+      fi
+      echo "Building digest..."
+      python3 build_digest.py "$2"
+    fi
+
+    # Get latest digest
+    FILE=$(ls -t digests/energy-digest-*.html 2>/dev/null | head -1)
+    if [ -z "$FILE" ]; then
+      echo "Error: No digest found. Run './digest.sh build <content-file>' first"
+      exit 1
+    fi
+
+    echo "Sending: $FILE"
+    git add "$FILE"
+    git commit -m "Add $(basename "$FILE" .html | sed 's/energy-digest-//' ) digest"
+    git push
+
+    echo ""
+    echo "Pushed! Email will arrive shortly."
+    echo "Check: https://github.com/zpybt6jjnf-ship-it/daily-digest/actions"
+    ;;
+
   help|--help|-h|"")
     echo "Daily Digest Helper"
     echo ""
@@ -77,6 +106,7 @@ case "${1:-help}" in
     echo "  copy              Copy content prompt to clipboard"
     echo "  build <file>      Convert content file to branded HTML"
     echo "  view              Open latest digest in browser"
+    echo "  send [file]       Build (optional), commit, push, email"
     echo "  help              Show this help"
     ;;
 
