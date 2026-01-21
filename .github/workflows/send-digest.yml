@@ -21,6 +21,7 @@ jobs:
       - name: Send email via Resend
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RECIPIENT: ${{ secrets.DIGEST_RECIPIENT }}
         run: |
           # Read HTML and escape for JSON
           HTML_CONTENT=$(cat "${{ steps.digest.outputs.file }}" | jq -Rs .)
@@ -31,8 +32,8 @@ jobs:
             -H 'Content-Type: application/json' \
             -d "{
               \"from\": \"Energy Digest <onboarding@resend.dev>\",
-              \"to\": \"${{ vars.DIGEST_RECIPIENT }}\",
-              \"subject\": \"Energy & Permitting Daily Digest - $(date +%b\ %d,\ %Y)\",
+              \"to\": \"$RECIPIENT\",
+              \"subject\": \"Energy & Permitting Daily Digest\",
               \"html\": $HTML_CONTENT
             }" \
             --fail-with-body
