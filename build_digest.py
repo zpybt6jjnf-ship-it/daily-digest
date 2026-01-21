@@ -643,7 +643,7 @@ def build_html(sections, date_str=None):
           <tr>
             <td style="background-color: #1a1a2e; padding: 20px 28px; border-top: 3px solid #e9c46a; border-radius: 0 0 10px 10px;">
               <p style="margin: 0; font-size: 13px; color: #faf8f5; text-align: center; font-weight: 500;">Compiled by Bottlenecks Labs</p>
-              <p style="margin: 6px 0 0 0; font-size: 11px; color: #8a8a9a; text-align: center;">Coverage: Past 24-48 hours · For informational purposes only</p>
+              <p style="margin: 6px 0 0 0; font-size: 11px; color: #8a8a9a; text-align: center;">News: 72 hrs · Publications & Grantees: 7 days · Strict cutoffs</p>
             </td>
           </tr>
 

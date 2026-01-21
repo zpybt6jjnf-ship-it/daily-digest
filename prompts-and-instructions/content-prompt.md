@@ -221,7 +221,7 @@ SOURCE ACCURACY RULES (CRITICAL)
    Before including ANY item, you MUST:
    - Confirm the source URL is accessible and contains the claimed content
    - Verify the publication date falls within the required time window:
-     * News: past 24-48 hours
+     * News: past 72 hours (3 days)
      * Publications: past 7 days
      * Grantee activities: past 7 days
    - If date cannot be confirmed from the source: mark "(date unconfirmed)"
@@ -230,6 +230,18 @@ SOURCE ACCURACY RULES (CRITICAL)
 
    DO NOT guess or infer dates. If you cannot verify a date, either mark it
    as unconfirmed or exclude the item entirely.
+
+   ┌─────────────────────────────────────────────────────────────────────┐
+   │ TIME WINDOW RULES (STRICT)                                         │
+   │                                                                     │
+   │   News & Statements:     72 hours (3 days) — hard cutoff           │
+   │   Publications:          7 days — hard cutoff                      │
+   │   Grantee Activities:    7 days — hard cutoff                      │
+   │                                                                     │
+   │   NO EXCEPTIONS. Items outside these windows must be excluded,     │
+   │   even if relevant to ongoing stories. Reference older context     │
+   │   in summaries if needed, but do not create separate entries.      │
+   └─────────────────────────────────────────────────────────────────────┘
 
 6. LINK TO BEST SOURCE
    - Prefer linking to primary sources when available
@@ -251,7 +263,7 @@ SECTION SIZE GUIDANCE:
 
 1. Top Developments (3 bullet points summarizing biggest news)
 
-2. News & Statements (past 24-48 hrs)
+2. News & Statements (past 72 hours)
    ORGANIZE INTO SUBSECTIONS:
    - Federal Regulatory Action
    - Grid & Markets
@@ -316,6 +328,7 @@ Search for recent publications/statements (past 7 days) from these organizations
 - Foundation for American Innovation
 - Rainey Center
 - Siting Solutions Project / Clean Tomorrow
+- Siting Clean Collaborative
 - Electricity Customers Alliance
 - American Conservation Coalition
 - Niskanen Center
@@ -324,9 +337,19 @@ Search for recent publications/statements (past 7 days) from these organizations
 - RAND Corporation
 - Nuclear Innovation Alliance
 - Grid Strategies
+- Rocky Mountain Institute (RMI)
 - Abundance Institute
 
 Also search for similar organizations and note findings under "Similar Organizations"
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ SEARCH REQUIREMENT: Each organization must have its own dedicated  │
+│ search query. Do NOT rely on a single combined search — individual │
+│ org names get lost. Run separate searches like:                    │
+│   "[Org Name] energy January 2026"                                 │
+│   "[Org Name] climate January 2026"                                │
+│   "[Org Name] permitting January 2026"                             │
+└─────────────────────────────────────────────────────────────────────┘
 
 Format:
 - If publication found: Include org name, publication title, date, substantive summary (not just a quote), and URL
@@ -503,7 +526,7 @@ The Top Developments section should feature the 3 highest-significance items fro
 QUALITY CHECKLIST (verify before outputting):
 [ ] Each URL was visited and content verified before inclusion
 [ ] Each date was confirmed from the source (not assumed or inferred)
-[ ] All dates fall within required time windows (news: 24-48hrs, pubs: 7 days)
+[ ] All dates fall within required time windows (news: 72hrs, pubs: 7 days)
 [ ] Titles describe what happened, not what an article is about
 [ ] Primary sources used where available
 [ ] All URLs are complete and valid
@@ -517,4 +540,4 @@ QUALITY CHECKLIST (verify before outputting):
 ---
 
 OUTPUT:
-Generate the content in the exact structured format above. Include real, current news from the past 24-48 hours. Output only the structured content — no HTML, no explanation, no commentary.
+Generate the content in the exact structured format above. Include real, current news from the past 72 hours. Output only the structured content — no HTML, no explanation, no commentary.

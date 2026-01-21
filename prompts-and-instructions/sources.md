@@ -197,6 +197,7 @@ Search for recent publications/statements (past 7 days) from these organizations
 | Foundation for American Innovation | Technology policy, energy innovation |
 | Rainey Center | Conservative clean energy policy |
 | Siting Solutions Project / Clean Tomorrow | Infrastructure siting, permitting |
+| Siting Clean Collaborative | Clean energy siting, community engagement |
 | Electricity Customers Alliance | Large customer energy policy |
 | American Conservation Coalition | Conservative environmental policy |
 | Niskanen Center | Climate policy, carbon pricing |
@@ -205,6 +206,7 @@ Search for recent publications/statements (past 7 days) from these organizations
 | RAND Corporation | Energy security, policy analysis |
 | Nuclear Innovation Alliance | Advanced nuclear policy |
 | Grid Strategies | Transmission planning, grid policy |
+| Rocky Mountain Institute (RMI) | Clean energy transition, efficiency |
 | Abundance Institute | Housing, energy, infrastructure abundance |
 
 ---

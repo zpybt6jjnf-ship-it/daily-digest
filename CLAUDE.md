@@ -59,7 +59,7 @@ News items use colored topic tags (max 2 per item):
 ## Digest Sections
 
 1. Top Developments (3 key bullet points)
-2. News & Statements (past 24-48 hrs)
+2. News & Statements (past 72 hours)
 3. Publications (past 7 days)
 4. Congressional & Executive Activity
 5. Business Activity
@@ -126,14 +126,21 @@ The Top Developments section should feature the 3 highest-significance items fro
 Before including any item, the LLM must:
 
 1. **Visit the URL** and confirm it contains the claimed content
-2. **Verify the date** falls within the required time window:
-   - News: past 24-48 hours
-   - Publications: past 7 days
-   - Grantee activities: past 7 days
+2. **Verify the date** falls within the required time window (see below)
 3. **Exclude unverifiable items** — do not guess or infer dates
 4. **Mark uncertain dates** as "(date unconfirmed)" if included
 
 Items that cannot be verified should be omitted rather than included with guessed information.
+
+### Time Window Rules (Strict)
+
+| Section | Window | Cutoff |
+|:--------|:-------|:-------|
+| News & Statements | 72 hours (3 days) | Hard — no exceptions |
+| Publications | 7 days | Hard — no exceptions |
+| Grantee Activities | 7 days | Hard — no exceptions |
+
+Items outside these windows must be excluded, even if relevant to ongoing stories. Reference older context in summaries if needed, but do not create separate entries.
 
 ## Coverage Scope
 
@@ -148,3 +155,7 @@ For major state actions, check:
 - **Texas**: PUCT, ERCOT
 - **New York**: NYSPSC, NYSERDA
 - **PJM states**: State utility commission announcements
+
+### Grantee Organization Searches
+
+**Each grantee organization requires its own dedicated search query.** Combined searches miss most results. Run individual searches like `"[Org Name] energy January 2026"` for each of the 19 listed organizations.
