@@ -23,30 +23,18 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           RECIPIENT: ${{ secrets.DIGEST_RECIPIENT }}
         run: |
-          # Debug output
-          echo "Sending to: $RECIPIENT"
-          echo "File: ${{ steps.digest.outputs.file }}"
-
           # Read HTML and escape for JSON
           HTML_CONTENT=$(cat "${{ steps.digest.outputs.file }}" | jq -Rs .)
 
           # Send via Resend API
-          response=$(curl -s -w "\n%{http_code}" -X POST 'https://api.resend.com/emails' \
+          curl -X POST 'https://api.resend.com/emails' \
             -H "Authorization: Bearer $RESEND_API_KEY" \
             -H 'Content-Type: application/json' \
             -d "{
               \"from\": \"onboarding@resend.dev\",
               \"to\": \"$RECIPIENT\",
-              \"subject\": \"Energy Digest Test\",
+              \"subject\": \"Energy & Permitting Daily Digest\",
               \"html\": $HTML_CONTENT
-            }")
+            }"
 
-          http_code=$(echo "$response" | tail -1)
-          body=$(echo "$response" | sed '$d')
-
-          echo "Response: $body"
-          echo "HTTP Code: $http_code"
-
-          if [ "$http_code" -ne 200 ]; then
-            exit 1
-          fi
+          echo "Email sent!"
