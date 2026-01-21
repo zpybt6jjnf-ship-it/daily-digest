@@ -13,6 +13,7 @@
 #   build  - Convert content file to branded HTML
 #   view   - View latest digest in browser
 #   send   - Build, commit, push (triggers email)
+#   auto   - Full automation: research, build, send (via Claude Code)
 #   help   - Show this help
 
 cd "$(dirname "$0")"
@@ -92,6 +93,33 @@ case "${1:-help}" in
     echo "Check: https://github.com/zpybt6jjnf-ship-it/daily-digest/actions"
     ;;
 
+  auto)
+    echo "🚀 Starting automated digest generation..."
+    echo ""
+
+    # Run content prompt via Claude Code
+    echo "Step 1/3: Running content prompt via Claude Code..."
+    claude --print "Run the content prompt in prompts-and-instructions/content-prompt.md in full. Save the structured output to content.txt. Do not ask questions, just execute." > /dev/null 2>&1
+
+    if [ ! -f "content.txt" ]; then
+      echo "Error: content.txt was not created"
+      exit 1
+    fi
+
+    echo "Step 2/3: Building HTML digest..."
+    python3 build_digest.py content.txt
+
+    echo "Step 3/3: Pushing to GitHub..."
+    FILE=$(ls -t digests/energy-digest-*.html 2>/dev/null | head -1)
+    git add "$FILE"
+    git commit -m "Add $(basename "$FILE" .html | sed 's/energy-digest-//') digest"
+    git push
+
+    echo ""
+    echo "✅ Done! Email will arrive shortly."
+    echo "Check: https://github.com/zpybt6jjnf-ship-it/daily-digest/actions"
+    ;;
+
   help|--help|-h|"")
     echo "Daily Digest Helper"
     echo ""
@@ -103,6 +131,7 @@ case "${1:-help}" in
     echo "  5. ./digest.sh view          Preview in browser"
     echo ""
     echo "COMMANDS:"
+    echo "  auto              Full automation (Claude Code → build → email)"
     echo "  copy              Copy content prompt to clipboard"
     echo "  build <file>      Convert content file to branded HTML"
     echo "  view              Open latest digest in browser"
