@@ -65,9 +65,16 @@ News items use colored topic tags (max 2 per item):
 5. Business Activity
 6. China
 7. Macro Trends
-8. What to Watch This Week
-9. Grantee Activities
-10. Limitations & Gaps
+8. Market Context (optional — only if prices are notable)
+9. What to Watch This Week
+10. Grantee Activities
+11. Limitations & Gaps
+
+### Section Guidelines
+
+- **Target 3-6 items per section** for balanced coverage
+- **No duplicates**: Each story appears in one section only
+- **Quality over quantity**: Note "Light news day for [topic]" rather than padding
 
 ## Structured Content Format
 
@@ -100,7 +107,7 @@ Each news item includes a significance rating to help identify top developments:
 
 | Level | Criteria |
 |:------|:---------|
-| **high** | $1B+, 1GW+, precedent-setting ("first," "largest," "landmark"), major FERC orders, court rulings, legislation passed, project begins operation |
+| **high** | $1B+, 1GW+, precedent-setting ("first," "largest," "landmark"), major FERC orders, court rulings, legislation passed, project begins operation, story appears in 3+ major sources |
 | **medium** | Notable scale ($100M-$1B, 100MW-1GW), incremental progress, regulatory filings, industry reactions, regional significance |
 | **low** | Routine updates, commentary without new information, local projects, scheduled events |
 
@@ -127,3 +134,17 @@ Before including any item, the LLM must:
 4. **Mark uncertain dates** as "(date unconfirmed)" if included
 
 Items that cannot be verified should be omitted rather than included with guessed information.
+
+## Coverage Scope
+
+- **Geography**: US primary, China secondary
+- **Energy**: All sectors, weighted toward electricity/grid
+- **Permitting**: NEPA, environmental review, siting, interconnection queues, permitting reform
+
+### State-Level Sources
+
+For major state actions, check:
+- **California**: CPUC, CEC
+- **Texas**: PUCT, ERCOT
+- **New York**: NYSPSC, NYSERDA
+- **PJM states**: State utility commission announcements
