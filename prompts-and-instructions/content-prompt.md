@@ -139,6 +139,10 @@ Check Federal Register and FERC eLibrary for FERC rulemaking deadlines, EPA rule
 SEARCH QUERY TEMPLATES
 ---
 
+These are starting points, not exhaustive lists. Expand searches as needed
+to ensure comprehensive coverage. Use these patterns as a baseline, then
+follow leads to related stories, filings, and announcements.
+
 News & Statements:
 - "FERC" + "order" + [today/yesterday]
 - "transmission" + "project" + "approved"

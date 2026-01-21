@@ -254,7 +254,7 @@ Check Federal Register and FERC eLibrary for:
 
 ## Search Query Templates
 
-Use these search patterns for each section:
+These are starting points, not exhaustive lists. Expand searches as needed to ensure comprehensive coverage. Use these patterns as a baseline, then follow leads to related stories, filings, and announcements.
 
 ### News & Statements
 ```
