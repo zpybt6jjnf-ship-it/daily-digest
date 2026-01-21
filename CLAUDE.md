@@ -81,6 +81,7 @@ The content prompt outputs structured text with section markers:
 ##SUBSECTION: Federal Regulatory Action
 ITEM:
 tags: [Nuclear, Policy]
+significance: high
 title: [What Happened]
 source: [Source Name]
 date: [Date]
@@ -92,6 +93,18 @@ url: [URL]
 ```
 
 The `build_digest.py` script parses this format and generates HTML.
+
+## Significance Scoring
+
+Each news item includes a significance rating to help identify top developments:
+
+| Level | Criteria |
+|:------|:---------|
+| **high** | $1B+, 1GW+, precedent-setting ("first," "largest," "landmark"), major FERC orders, court rulings, legislation passed, project begins operation |
+| **medium** | Notable scale ($100M-$1B, 100MW-1GW), incremental progress, regulatory filings, industry reactions, regional significance |
+| **low** | Routine updates, commentary without new information, local projects, scheduled events |
+
+The Top Developments section should feature the 3 highest-significance items from the digest.
 
 ## Source Accuracy Rules
 
