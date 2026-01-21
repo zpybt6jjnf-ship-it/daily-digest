@@ -4,33 +4,35 @@ Energy & Permitting Daily Digest project, compiled by Bottlenecks Labs.
 
 ## Quick Start
 
-**From your computer:**
 ```bash
-./digest.sh copy   # Copies prompt to clipboard, opens Gemini
-./digest.sh new    # Creates today's HTML file for pasting
-./digest.sh view   # Opens latest digest in browser
+./digest.sh copy              # Copy content prompt to clipboard, open Claude.ai
+# Paste prompt in Claude.ai, get structured content back
+# Save output: pbpaste > content.txt
+./digest.sh build content.txt # Generate branded HTML from content
+./digest.sh view              # Open latest digest in browser
 ```
 
-**From anywhere (phone, tablet, etc.):**
-1. Open the prompt from a Google Doc (copy `prompts-and-instructions/external_use-html-prompt.md`)
-2. Paste into Gemini (gemini.google.com)
-3. Copy the HTML output
-4. Save as `.html` file, open in any browser
+## Workflow
+
+This project uses a **hybrid approach**:
+1. **Research** (LLM): Claude.ai generates structured text content using the content prompt
+2. **Formatting** (Python): `build_digest.py` converts the structured content to branded HTML
+
+This separation ensures consistent HTML output regardless of which LLM generates the content.
 
 ## Project Structure
 
 ```
 prompts-and-instructions/
-  ├── external_use-html-prompt.md  # Full prompt for Gemini (outputs styled HTML)
-  ├── digest-prompt.md             # Prompt for local Claude Code use (outputs markdown)
-  └── sources.md                   # Reference list of news sources and companies
+  └── content-prompt.md       # Full research prompt for Claude.ai (outputs structured text)
 
-digests/                           # Output directory for generated digests
+digests/
+  ├── energy-digest-*.html    # Generated digest HTML files
+  └── html-design-template.html  # Visual reference of HTML template
 
-scripts/
-  ├── view_digest.py               # Convert markdown → styled HTML (local use)
-  ├── review_presentation.py       # Check links in digest
-  └── email_template.html          # HTML template reference
+build_digest.py               # Python script that converts structured content → HTML
+digest.sh                     # Helper script for workflow commands
+STYLE_GUIDE.md                # Bottlenecks Labs visual identity
 ```
 
 ## Design System
@@ -39,6 +41,20 @@ See `STYLE_GUIDE.md` for the complete Bottlenecks Labs visual identity:
 - Brand colors (ink, cream, teal, coral, gold)
 - Typography (DM Sans, Space Mono)
 - Component patterns (cards, tables, callouts)
+
+### Topic Tags
+
+News items use colored topic tags (max 2 per item):
+
+| Tag | Color | Hex |
+|:----|:------|:----|
+| Nuclear | Purple | `#9b59b6` |
+| Data Center | Teal | `#1abc9c` |
+| Grid | Orange | `#e67e22` |
+| Wind | Blue | `#3498db` |
+| Solar | Dark Gold | `#d4a017` |
+| Storage | Green | `#27ae60` |
+| Policy | Red | `#e74c3c` |
 
 ## Digest Sections
 
@@ -52,6 +68,30 @@ See `STYLE_GUIDE.md` for the complete Bottlenecks Labs visual identity:
 8. What to Watch This Week
 9. Grantee Activities
 10. Limitations & Gaps
+
+## Structured Content Format
+
+The content prompt outputs structured text with section markers:
+
+```
+===TOP_DEVELOPMENTS===
+- [Development] — [Summary]
+
+===NEWS===
+##SUBSECTION: Federal Regulatory Action
+ITEM:
+tags: [Nuclear, Policy]
+title: [What Happened]
+source: [Source Name]
+date: [Date]
+summary: [Summary]
+url: [URL]
+
+===PUBLICATIONS===
+...
+```
+
+The `build_digest.py` script parses this format and generates HTML.
 
 ## Source Accuracy Rules
 

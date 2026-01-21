@@ -64,6 +64,33 @@ A 44×44px dark square containing a stylized mountain range rendered as a gradie
 | **Gold** | `#e9c46a` | 233, 196, 106 | Warnings, special callouts, decorative accents |
 | **Navy** | `#264653` | 38, 70, 83 | Alternative dark color, depth |
 
+### Topic Tag Colors
+
+Used for categorizing news items in the Daily Digest (max 2 tags per item):
+
+| Tag | Hex | Usage |
+|:----|:----|:------|
+| **Nuclear** | `#9b59b6` | Nuclear power, SMRs, advanced reactors |
+| **Data Center** | `#1abc9c` | Data center power, tech company PPAs |
+| **Grid** | `#e67e22` | Transmission, interconnection, grid reliability |
+| **Wind** | `#3498db` | Onshore wind, offshore wind projects |
+| **Solar** | `#d4a017` | Solar projects, solar manufacturing |
+| **Storage** | `#27ae60` | Battery storage, long-duration storage |
+| **Policy** | `#e74c3c` | Regulatory, permitting, legislation |
+
+Tag styling:
+```css
+.topic-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: 6px;
+}
+```
+
 ### Neutral Colors
 
 | Name | Hex | RGB | Usage |
@@ -290,14 +317,14 @@ For beta or status notifications at the top of content:
 ```css
 .banner-beta {
   background-color: #e9c46a;
-  padding: 8px 28px;
+  padding: 10px 28px;
   border-radius: 10px 10px 0 0;
   text-align: center;
 }
 
 .banner-beta p {
-  font-family: monospace;
-  font-size: 11px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
   font-weight: 700;
   color: #1a1a2e;
 }
