@@ -97,18 +97,23 @@ case "${1:-help}" in
     echo "🚀 Starting automated digest generation..."
     echo ""
 
-    # Run content prompt via Claude Code
-    echo "Step 1/3: Running content prompt via Claude Code..."
-    claude --print "Run the content prompt in prompts-and-instructions/content-prompt.md in full. Save the structured output to content.txt. Do not ask questions, just execute." > /dev/null 2>&1
+    # Remove old content.txt if exists
+    rm -f content.txt
+
+    # Run content prompt via Claude Code with full tool access
+    echo "Step 1/3: Researching news via Claude Code (this takes a few minutes)..."
+    claude --dangerously-skip-permissions "Read and execute prompts-and-instructions/content-prompt.md in full. Do all required web searches. When complete, save ONLY the structured output (starting with ===TOP_DEVELOPMENTS===) to content.txt. Do not include any commentary or explanation in the file."
 
     if [ ! -f "content.txt" ]; then
       echo "Error: content.txt was not created"
       exit 1
     fi
 
+    echo ""
     echo "Step 2/3: Building HTML digest..."
     python3 build_digest.py content.txt
 
+    echo ""
     echo "Step 3/3: Pushing to GitHub..."
     FILE=$(ls -t digests/energy-digest-*.html 2>/dev/null | head -1)
     git add "$FILE"
